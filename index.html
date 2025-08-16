@@ -1,0 +1,895 @@
+<html>
+<head>
+    <link rel="stylesheet" href="css/stilePF.css">
+        <link rel="stylesheet" href="css/funzioneSCSS.css">
+
+    <link rel="stylesheet" href="css/magnify.css">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Noto+Sans&display=swap" rel="stylesheet">
+
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Meie+Script&family=Pinyon+Script&display=swap" rel="stylesheet"></head>    
+
+<body>
+          
+         <div class="contenitore_dietro"> </div> 
+
+         <div class="header">
+            <div class="sfondo">
+             
+                     <h1> Elisa Sorri </h1>
+                        <a href="#progetto">
+                        <!--<h3 style="color: #B48291"> Benvenuti </h3>-->
+                        <div  id="frecciamovimento">
+                        <img width="60" height="60" src="https://img.icons8.com/dotty/80/9d7e9d/move-down.png" alt="move-down"/>
+                        </div>
+                        </a>
+                        <div  class="fioreDecorativo">
+                              <img width="60" height="60" class="giglioBianco" src="image/decorazioni/fioreBiancoRosso.png" alt="move-down"/>
+                        </div>
+                        
+                        <div  class="fioreDecorativo">
+                              <img width="60" height="60" class="giglioBianco2" src="image/decorazioni/fioreBiancoRosso2.png" alt="move-down"/>
+                        </div>
+
+                        <div  class="fioreDecorativo">
+                              <img width="60" height="60" class="giglioBianco3" src="image/decorazioni/fioreBiancoRosso.png" alt="move-down"/>
+                        </div>
+               </div>
+               
+            </div>
+            
+         
+         <nav class="nav">
+         <a href="#progetto" class="nav-link active" onclick="showSection('home')">Tutto</a>
+
+         <a href="#progetto" class="nav-link active" onclick="showSection('Wordpress')">SEO e Wordpress</a>
+         <a href="#progetto" class="nav-link" onclick="showSection('DB')">Progettazione DB</a>
+         <a href="#progetto" class="nav-link" onclick="showSection('Design')">Design</a>
+         <a href="#progetto" class="nav-link" onclick="showSection('Grafica')">Grafica</a>
+
+         </nav>
+         
+         <!--<div class="nav"> 
+            <div class="elementiNav">Siti Realizzati</div>
+            <div class="elementiNav">elemento2</div>
+            <div class="elementiNav">elemento3</div>
+            <div class="elementiNav">elemento4</div>
+            <div class="elementiNav">elemento5</div>
+            <div class="elementiNav">elemento6</div>
+            <div class="elementiNav">elemento7</div>
+         </div> --> 
+         
+            
+       <!--  <section class="section"> 
+               <div class="Colonne InnImage">
+                    <div><img src="image/fermoImg.jpg" id="inColonne" alt="web development"/>
+                     <div id="scritta">Web development</div>
+                     </div>
+                     <div class="hoverImg">
+                        <video id="inColonneVideo" playsinline autoplay muted loop>
+                           <source src="image/video/videodef0001-0250-compresso.mp4" type="video/mp4">
+                        </video>
+                     </div>
+               </div>
+            <div class="Colonne" style="background-color:aqua;">Colonna 1</div>
+            <div class="Colonne" style="background-color:brown;">Colonna 1</div>
+         </section> -->
+
+      <div class="contenitoreInfo">
+         <div id="spazioVuoto"> </div>
+
+         <!--sezione che mostra tutti i risultati-->
+         <div class="anti-container"><a id="progetto"><h3 style="color: #2f3732;"> Progetti </h3><h4> ...sito in costante aggiornamento </h4> </a></div>
+         <div id="home" class="content-section" style="display: flex;flex-wrap: wrap;">
+               
+              <!--QUi inizia il div contenente la settima iniziativa-->
+               <div class="container">
+                        <div class="categoria">Creazione contenuti - Brand Image - AI</div> <div class="dettagli" onClick="show7()"> Leggi di più </div>
+                        <div class="zoom-container">
+                           <img src="image/MarketingTerritoriale/casa_della_trota/casadellaTrota.jpg" id="immagineCarat" onClick="show7()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                        </div>
+
+                     <div class="contenuti" >  
+                           <h2><span class="categoriaFont">Case study 5</span><span class="parolaChiaveTitolo"> Creazione brand</span> <br>L'AI per la generazione di immagini per raccontare nuove idee</h2>
+                           <p style="padding-bottom: 8%;"> </p>
+                     </div>   <div class="icona_more" onClick="show7()">
+                           <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                           <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                        </div> 
+            
+               </div>
+
+               <!--QUi inizia il div contenente la ottava iniziativa-->
+               <div class="container">
+                  <div class="categoria">Digital marketing</div> <div class="dettagli" onClick="show8()"> Leggi di più </div>
+                  <div class="zoom-container">
+                     <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/1.png" id="immagineCarat" onClick="show8()" class="zoom" >
+                  </div>
+
+               <div class="contenuti" >  
+                     <h2><span class="categoriaFont">Case study 8 </span><span class="parolaChiaveTitolo"> Digital marketing - Hotel - Turismo</span> <br>Miglioramento presenza online di un Hotel</h2>
+                     <p style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
+               </div>    <div class="icona_more" onClick="show3()">
+                     <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                     <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                  </div>  
+                  
+               </div>
+               
+               <!--QUi inizia il div contenente la prima iniziativa-->
+                  <div class="container">
+                     <div class="categoria">Siti Realizzati - progettazione</div> <div class="dettagli" onClick="show()"> Leggi di più </div>
+                     <div class="zoom-container">
+                        <img src="image/appi/Immagine3.JPG" id="immagineCarat" onClick="show()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                     </div>
+
+                     <div class="contenuti" >  
+                           <h2 onClick="show()"><span class="categoriaFont">Case study 1 </span><span class="parolaChiaveTitolo"> APPI</span> <br>It's so nice to be healthy </h2>
+                           <p style="padding-bottom: 8%;">Progettazione e implementazione di un sito di fornitura di materiali per la protezione della salute durante l'emergenza Covid-19</p>
+                     </div>
+
+                     <div class="icona_more" onClick="show()">
+                        <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/>
+                        <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                     </div>  
+                        
+                  </div>
+
+
+               <!--QUi inizia il div contenente la seconda iniziativa-->
+                  <div class="container">
+                     <div class="categoria">Siti Realizzati - Wordpress - Seo</div> <div class="dettagli" onClick="show2()"> Leggi di più </div>
+                     <div class="zoom-container">
+                        <img src="image/MarketingTerritoriale/homepageMT.png" id="immagineCarat" onClick="show2()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                     </div>
+
+                  <div class="contenuti" >  
+                        <h2><span class="categoriaFont">Case study 2 </span><span class="parolaChiaveTitolo"> Place Marketing</span> <br>Marketing territoriale </h2>
+                        <p style="padding-bottom: 8%;">Un sito realizzato in Wordpress. Analisi keyword per la SEO. L'obiettivo era raccontare le modalità di applicazione del marketing al territorio.</p>
+                  </div>    <div class="icona_more" onClick="show2()">
+                        <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                        <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                     </div>  
+                     
+                  </div>
+
+
+               <!--QUi inizia il div contenente la terza iniziativa-->
+               <div class="container">
+                  <div class="categoria">Progettazione - Database</div> <div class="dettagli" onClick="show3()"> Leggi di più </div>
+                  <div class="zoom-container">
+                     <img src="image/database/modello2.JPG" id="immagineCarat" onClick="show3()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                  </div>
+
+               <div class="contenuti" >  
+                     <h2><span class="categoriaFont">Case study 3 </span><span class="parolaChiaveTitolo"> Progettazione database per il sito di un Ristorante</span> <br>Utilizzo di Modelli concettuali e logici</h2>
+                     <p style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
+               </div>    <div class="icona_more" onClick="show3()">
+                     <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                     <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                  </div>  
+                  
+               </div>
+
+         
+                  
+            
+               <!--QUi inizia il div contenente la quarta iniziativa-->
+               <div class="container">
+                  <div class="categoria">Interaction design - Figma</div> <div class="dettagli" onClick="show4()"> Leggi di più </div>
+                  <div class="zoom-container">
+                     <img src="image/figmaInteractionDesign/homepage2.jpg" id="immagineCarat" onClick="show4()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                  </div>
+
+               <div class="contenuti" >  
+                     <h2><span class="categoriaFont">Case study 4 </span><span class="parolaChiaveTitolo"> Interaction design</span> <br>Prototipo realizzato con Figma e analisi di piattaforme esistenti</h2>
+                     <p style="padding-bottom: 8%;"> </p>
+               </div>  
+                  
+                  <div class="icona_more" onClick="show4()"> 
+                     <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                     <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                  </div>  
+                  
+               </div>      
+
+               <!--QUi inizia il div contenente la quinta iniziativa-->
+               <div class="container">
+                  <div class="categoria">Grafica - Creazione contenuti social</div> <div class="dettagli" onClick="show5()"> Leggi di più </div>
+                  <div class="zoom-container">
+                     <img src="image/grafica/mirachallenge/1.png" id="immagineCarat" onClick="show5()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                  </div>
+
+               <div class="contenuti" >  
+                     <h2><span class="categoriaFont">Contenuti social </span><span class="parolaChiaveTitolo"> Giovani a Mirafiori</span> <br>Contenuti grafici per iniziative culturali dell'associazione Giovani a Mirafiori</h2>
+                     <p style="padding-bottom: 8%;"> </p>
+               </div>    <div class="icona_more" onClick="show5()" >
+                     <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                     <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </a> </div>  
+               </div>      
+
+               <!--QUi inizia il div contenente la sesta iniziativa-->
+               <div class="container">
+                        <div class="categoria">Grafica - Creazione contenuti social</div> <div class="dettagli" onClick="show6()"> Leggi di più </div>
+                        <div class="zoom-container">
+                           <img src="image/grafica/Lego/mattoncino.jpeg" id="immagineCarat" onClick="show6()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                        </div>
+
+                     <div class="contenuti" >  
+                           <h2><span class="categoriaFont">Contenuti social</span><span class="parolaChiaveTitolo"> Comunicazione legata a eventi di modellismo</span> <br>Contenuti grafici per pubblicizzare eventi legati ai Lego</h2>
+                           <p style="padding-bottom: 8%;"> </p>
+                     </div>   <div class="icona_more" onClick="show6()">
+                           <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                           <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                        </div> 
+            
+               </div>
+               
+         </div>
+
+         <!--sezione che mostra i risultati a tema seo e wordpress-->
+
+
+         <div id="Wordpress" class="content-section" style="display:none;">
+                  
+                  <div class="anti-container"><a id="progetto"></a></div>
+
+                  <!--QUi inizia il div contenente la seconda iniziativa-->
+                  <div class="container">
+                     <div class="categoria">Siti Realizzati - Wordpress - Seo</div> <div class="dettagli" onClick="show2()"> Leggi di più </div>
+                     <div class="zoom-container">
+                        <img src="image/MarketingTerritoriale/homepageMT.png" id="immagineCarat" onClick="show2()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                     </div>
+
+                     <div class="contenuti" >  
+                           <h2><span class="categoriaFont">Case study 2 </span><span class="parolaChiaveTitolo"> Place Marketing</span> <br>Marketing territoriale </h2>
+                           <p style="padding-bottom: 8%;">Un sito realizzato in Wordpress. Analisi keyword per la SEO. L'obiettivo era raccontare le modalità di applicazione del marketing al territorio.</p>
+                     </div>    
+                     <div class="icona_more" onClick="show2()">
+                        <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                        <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                     </div>  
+                     
+                  </div>  
+         </div>
+
+         <!--sezione che mostra i risultati relativi ai database-->
+
+         <div id="DB" class="content-section" style="display:none;">
+               <div class="anti-container"><a id="progetto"><h4> ...sito in costante aggiornamento </h4></a></div>
+                  <!--QUi inizia il div contenente la terza iniziativa-->
+                  <div class="container">
+                     <div class="categoria">Progettazione - Database</div> <div class="dettagli" onClick="show3()"> Leggi di più </div>
+                     <div class="zoom-container">
+                        <img src="image/database/modello2.JPG" id="immagineCarat" onClick="show3()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                     </div>
+
+                  <div class="contenuti" >  
+                        <h2><span class="categoriaFont">Case study 3 </span><span class="parolaChiaveTitolo"> Progettazione database per il sito di un Ristorante</span> <br>Utilizzo di Modelli concettuali e logici</h2>
+                        <p style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
+                  </div>    <div class="icona_more" onClick="show3()">
+                        <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                        <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                     </div>  
+                     
+                  </div>
+         </div>
+
+         <!--sezione che mostra i risultati relativi al web design-->
+
+         <div id="Design" class="content-section" style="display:none;">
+                  <div class="anti-container"><a id="progetto"><h4>  ...sito in costante aggiornamento </h4></a></div>
+                  <!--QUi inizia il div contenente la quarta iniziativa-->
+                     <div class="container">
+                        <div class="categoria">Interaction design - Figma</div> <div class="dettagli" onClick="show4()"> Leggi di più </div>
+                        <div class="zoom-container">
+                           <img src="image/figmaInteractionDesign/homepage2.jpg" id="immagineCarat" onClick="show4()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                        </div>
+
+                     <div class="contenuti" >  
+                           <h2><span class="categoriaFont">Case study 4 </span><span class="parolaChiaveTitolo"> Interaction design</span> <br>Prototipo realizzato con Figma e analisi di piattaforme esistenti</h2>
+                           <p style="padding-bottom: 8%;"> </p>
+                     </div>  
+                        
+                        <div class="icona_more" onClick="show4()"> 
+                           <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                           <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                        </div>  
+                        
+                     </div>
+                  
+                  <!--QUi inizia il div contenente la sesta iniziativa-->
+                     <div class="container">
+                              <div class="categoria">Creazione contenuti - AI </div> <div class="dettagli" onClick="show7()"> Leggi di più </div>
+                              <div class="zoom-container">
+                                 <img src="image/MarketingTerritoriale/casa_della_trota/casadellaTrota.jpg" id="immagineCarat" onClick="show7()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                              </div>
+
+                           <div class="contenuti" >  
+                                 <h2><span class="categoriaFont">Case study 5</span><span class="parolaChiaveTitolo"> Creazione brand</span> <br>L'AI per la generazione di immagini per raccontare nuove idee</h2>
+                                 <p style="padding-bottom: 8%;"> </p>
+                           </div>   <div class="icona_more" onClick="show7()">
+                                 <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                                 <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                              </div> 
+                  
+                     </div>
+
+         </div>
+         
+         
+         <!--sezione che mostra i risultati relativi alla grafica-->
+
+         <div id="Grafica" class="content-section" style="display:none;">
+                  <div class="anti-container"><a id="progetto"><h4> ...sito in costante aggiornamento </h4></a></div>
+                  <!--QUi inizia il div contenente la quinta iniziativa-->
+                  <div class="container">
+                     <div class="categoria">Grafica - Creazione contenuti social</div> <div class="dettagli" onClick="show5()"> Leggi di più </div>
+                     <div class="zoom-container">
+                        <img src="image/grafica/mirachallenge/1.png" id="immagineCarat" onClick="show5()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                     </div>
+
+                  <div class="contenuti" >  
+                        <h2><span class="categoriaFont">Contenuti social </span><span class="parolaChiaveTitolo"> Giovani a Mirafiori</span> <br>Creazione contenuti grafici per iniziative culturali dell'associazione Giovani a Mirafiori</h2>
+                        <p style="padding-bottom: 8%;"> </p>
+                  </div>    <div class="icona_more" onClick="show5()" >
+                        <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                        <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                  </a> </div>  
+                  </div>      
+
+                  <!--QUi inizia il div contenente la sesta iniziativa-->
+                  <div class="container">
+                     <div class="categoria">Grafica - Creazione contenuti social</div> <div class="dettagli" onClick="show6()"> Leggi di più </div>
+                     <div class="zoom-container">
+                        <img src="image/grafica/Lego/mattoncino.jpeg" id="immagineCarat" onClick="show6()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                     </div>
+
+                  <div class="contenuti" >  
+                        <h2><span class="categoriaFont">Contenuti social</span><span class="parolaChiaveTitolo"> Comunicazione legata a eventi di modellismo</span> <br>Creazione contenuti grafici per pubblicizzare eventi legati a modellismo e ai mattoncini</h2>
+                        <p style="padding-bottom: 8%;"> </p>
+                  </div>   <div class="icona_more" onClick="show6()">
+                        <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                        <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                     </div> 
+                     
+                  </div> 
+         </div>
+            
+
+
+         
+
+         
+         <!--QUi inizia il div contenente la prima iniziativa
+            <div class="container">
+               <div class="categoria">Siti Realizzati - progettazione</div> <div class="dettagli" onClick="show()"> Leggi di più </div>
+               <div class="zoom-container">
+                  <img src="image/appi/Immagine3.JPG" id="immagineCarat" onClick="show()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+               </div>
+
+            <div class="contenuti" >  
+                  <h2><span class="categoriaFont">Case study 1 </span><span class="parolaChiaveTitolo"> APPI</span> <br>It's so nice to be healthy </h2>
+                  <p style="padding-bottom: 8%;">Progettazione e implementazione di un sito di fornitura di materiali per la protezione della salute durante l'emergenza Covid-19</p>
+            </div>    <div class="icona_more" onClick="show()">
+                  <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                  <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </div>  
+               
+            </div>-->
+
+
+
+         
+            
+      
+          
+
+              
+         
+            
+      </div>
+  
+      <div id="bigCursor"></div>
+
+      <div id="cerchio"></div>
+
+
+      <!--QUi inizia il div contenente l'approfondimento della prima iniziativa-->
+      <div class="moreInfo" id="moreInfo1" > <a name="AppiCaseStudy"> </br> </a>
+
+         <div id="spazioVuotoAmpio"> </div>
+
+         <div class="title">
+            <h3>APPI: Avviso per prodotti introvabili</h3>
+         </div>
+               <div class="icona_chiusura" onClick="hide()">
+               <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+               <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </div>
+               <div class="containerMagInfo"> 
+                  <div class="box divisione bianco">
+                        <div id="spazioIntroSx">
+                        <p>APPI è un progetto realizzato nel 2020 all'interno di un'iniziativa universitaria "Ideazione di soluzioni ICT per la gestione di crisi", che prevedeva la progetta di una piattaforma digitale per aiutare le imprese a trovare gli articoli che in quel periodo risultavano di difficile reperimento, mostrando i fornitori più vicini alla propria sede. </p>
+                        </div>
+                        <div id="spazioSinistra"><h2> Introduzione alle funzionalità del sistema</h2></div>
+                        <p id="spazioTsDx">   L'utente inseriva il prodotto ricercato e la città in cui era interessato a trovare i fornitori, e gli viene presentata un'interfaccia dove sono elencati gli articoli situati nella città, provincia indicata. L'idea di progetto prevedeva una campagna di comunicazione attivata dai comuni per richiedere ai fornitori di partecipare e inserire gli articoli a fine informativo. Anche le imprese contribuiscono a responsabilizzare i fornitori circa l'inserimento sulla piattaforma dei prodotti disponibili. 
+                           I fornitori possono inserire le informazioni sulla propria attività e gli articoli prodotti e posseduti in magazzino. 
+                  </div><div class="box singolo bianco">
+                        Ha preceduto la creazione del sito (implementato con Html e Css) una breve fase di <strong>progettazione del sistema.</strong> Il target del sito è rappresentato dai fornitori che inseriscono i prodotti e dalle istituzioni/organizzazioni private che ricercano fornitori adatti. Un fattore importante era che il sito fosse semplice e intuitivo nel fornire le informazioni nel modo più trasparente ed esplicito possibile. </p>
+                  </div>  
+
+                  
+                  <div class="box divisione verdePetrolio">
+                     <p class="testoSx">
+                     La <strong>descrizione del sistema informativo</strong>, <br>riportante gli <strong>attori</strong> e le loro <strong>azioni</strong>.
+                     </p>
+                     <p class="imgDestra">
+                     <img src="image/appi/Immagine5.png"class="img"/> 
+                     </p>
+                  </div>
+                  
+
+                  <div class="box divisione">
+                     <p class="testoMIPrincipale elSingoloGenerico"> Realizzazione <strong>Sequence diagram</strong>, rappresentante le interazioni interne al sito tra utente, sistema e Database.
+                        <img src="image/appi/Immagine7.png" class="img"/> 
+                        </p>
+
+                     <p class="testoMIPrincipale elSingoloGenerico"> Realizzazione delle <strong>StoryBoard</strong> e definizione <strong>Mappa ad albero</strong> con le funzioni ordinate gerarchicamente.
+                        <img src="image/appi/Immagine8.png"class="img"/> 
+                        </p>
+                  </div>
+
+               
+
+                  <div class="box singolo bianco" style="width: 89%;">
+                     <p class="testoMISecondario"><strong>Implementazione sito:</strong> Pagina index, homepage, mostra una spiegazione di che cos’è APPI e una barra di ricerca. Mostra inoltre un link in altro a destra dove è possibile trovare di cosa necessitano le imprese per ripartire.</p>
+                     <img src="image/appi/Immagine1.JPG"class="imgMagInfo"/>
+                  </div>
+
+                  <div class="box singolo verdePetrolio" style="width: 89%;">
+                     <div>
+                        <p class="testoMIPrincipale">La ricerca dà come risultato una nuova pagina in cui si possono vedere i fornitori che hanno il prodotto disponibile insieme alle informazioni essenziali relative ai fornitori.</p>
+                        <img src="image/appi/Immagine2.JPG"class="img"/>
+                     </div>
+                  </div>
+
+
+                  <div class="box singolo">
+                     <p class="testoMIPrincipale">Cliccando “vedi i loro prodotti” è possibile visualizzare una pagina dedicata al fornitore e ai loro prodotti con le relative caratteristiche.</p>
+                     <img src="image/appi/Immagine3.JPG"class="img"/>
+                  </div>
+
+                 <div class="box singolo verdePetrolio" style="width: 89%;">
+                     <p class="testoMIPrincipale">Prototipo della pagina privata personale dedicata al <strong>fornitore</strong> nella quale può aggiungere prodotti, eliminare prodotti, modificare il profilo, e modificare la password:</p>
+                     <img src="image/appi/Immagine4.JPG"class="img"/>
+                  </div>
+
+               
+               </div>
+         
+
+      
+      </div>
+      
+      <!--QUi inizia il div contenente l'approfondimento della seconda iniziativa-->
+      <div class="moreInfo" id="moreInfo2" > <a name="seoWordpress"> </br> </a>
+         <div id="spazioVuotoAmpio"> </div>
+         
+         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+            <h3>Analisi SEO del sito Place marketing</h3>
+         </div>
+               <div class="icona_chiusura" onClick="hide2()">
+               <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+               <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </div>
+               <div>
+                  <div class="containerMagInfo">
+                 
+                     <div class="box singolo bianco">
+                      <p>Miglioramento dell'indicizzazione di un sito sui motori di ricerca all'interno di un corso universitario di web writing. Il sito in oggetto aveva  l'obiettivo di raccontare attraverso articoli, interviste e discussioni, le modalità di applicazione del marketing al territorio. Il sito è realizzato in Wordpress, con l'utilizzo dei plug-in Elementor, gestore di file WP, Yoast SEO.</p></div>
+                      <div class="box divisione bianco">
+                      <div id="spazioIntroSx">
+                        <h2>Comprendere il linguaggio a partire dal target</h2>
+                        <p> Innanzitutto, si è cercato di <strong>determinare il target</strong>: un gruppo di appassionati di marketing che voglia approfondire il tema con riferimento alla promozione territoriale. Per cui per quanto vario, è in generale un target istruito, che si aspetta un linguaggio formale e non troppo elementare. Un target che si aspetta il rispetto della propria figura e della materia affrontata,
+                        e che vuole ricevere supporto in maniera seria e diretta, poiché nel momento in cui effettuerà la ricerca si starà approcciando a un progetto complesso e responsabilizzante.
+                        </div>
+                        <div id="spazioSinistra"> <h2>Indice di Gulpease</h2> </div>
+                        <p id="spazioTsDx"> è stato dunque misurato lo strimento dell'Indice di Gulpease che ha rivelato testi complessi da leggere per un pubblico con licenza elementare o media, ma considetato che E il target raggiunto potrebbe avere una o più lauree, o comunque un livello di conoscenze elevato, il linguaggio dovrebbe essere più che adeguato..
+                           <img src="image/MarketingTerritoriale/ImmaginePM1.JPG"class="img"/> 
+                           </p>
+                     </div> 
+   
+                     <div class="box singolo verdePetrolio">
+                        <p class="testoMISecondario" style="text-align: center;"><strong>Creazione della sitemap</strong>, la definizione e descrizione delle pagine, e le <strong>parole chiave</strong> stabilite <strong>per ciascuna pagina</strong>.<img src="image/MarketingTerritoriale/ImmaginePM2.JPG"class="img"/> 
+                           </p>
+                        </div>      
+
+                        <div class=" box divisione">
+                           <p class="testoMIPrincipale sezioniUguali"> Per ogni pagine si definiscono <strong>le personas e il linguaggio utilizzato</strong>.<img src="image/MarketingTerritoriale/ImmaginePM3.JPG"class="img"/> </p>
+                           <p class="testoMIPrincipale sezioniUguali"> Tramite lo <strong>strumento online di SeoZoom</strong> si selezionano tra le parole individuate precedentemente quelle che effettivamente hanno un seguito online. (analisi su seozoom del valore key) 
+
+                        
+                           Dall'analisi semantica delle parole chiave, si derivano ulteriori parole chiave e argomenti su cui è più utile concentrarsi per indicizzare l'articolo.
+                           <img src="image/MarketingTerritoriale/ImmaginePM4.JPG"class="img"/> 
+                        </p> 
+                        </div>
+
+                     <div class="box singolo bianco">
+                     <p class="testoMISecondario"> Visuale sito + link di rimando <a href="https://placemarketing.altervista.org" class="linkMoreInfo">Place Marketing</a>. Un fattore importante ha assunto la ricerca di fare testi di una lunghezza prestabilita non eccessiva, senza ripetere i termini tante volte.
+                        <img src="image/MarketingTerritoriale/homepagePM.png"class="img"/> 
+                     </p>
+                     </div>
+
+
+                  </div>
+
+
+
+               </div>
+      </div> 
+
+      <!--QUi inizia il div contenente l'approfondimento della terza iniziativa-->
+      <div class="contenuto moreInfo" id="moreInfo3" > <a name="ProgettazioneDb"> </br> </a>
+         <div id="spazioVuotoAmpio"> </div>
+  
+         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+            <h3>Progettazione e realizzazione di un database con MySQL</h3>
+         </div>
+               <div class="icona_chiusura" onClick="hide3()">
+               <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+               <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </div>
+               <div class="containerMagInfo"> 
+                 
+                  <div class="box singolo bianco"> 
+                  <p class="testoMISecondario">
+                     Progettazione di un database che gestisca le informazioni riguardanti ordini, piatti, prodotti per la creazione di un sito per ordinazione di piatti da un ristorante. (Realizzato per un esame di gestione e progettazione di base di dati)
+                  </p>
+               </div>
+
+
+                  <div class="box divisione verdePetrolio">
+                     <div class="sezioniUguali">
+                        <h2>modello concettuale entità-relazione</h2>
+                        <p class="testoMIPrincipale">
+                        Il punto di partenza è la creazione di un modello concettuale, ad esempio il modello entità-relazione, per identificare attori e oggetti di interesse sulla quale raccogliere le informazioni, ciascuno ha i propri attributi descrittivi, e le associazioni che intercorrono tra questi oggetti.
+                        <img src="image/database/modello1.JPG"class="img"/> 
+                        </p></div>
+                     
+                     <div class="sezioniUguali">
+                        <h2>modello logico relazionale</h2>
+                        <p class="testoMIPrincipale">
+                        Creazione del modello logico con definizione della tipologia di variabile per ogni attributo, indicando le chiavi primarie e foreign keys(chiavi esterne) legati da un vingolo di integrità referenziale. Implementazione delle tabelle su Mysql e collegamento delle chiavi esterne con le chiavi interne delle rispettive tabelle cui fanno capo.
+                        <img src="image/database/modello2.JPG"class="img"/> 
+                     </p></div>
+                  </div>
+
+                  <div class="box divisione bianco">
+                     <div class="sezioniUguali">
+                     <p class="testoMISecondario">
+                        Creazione del modello logico con definizione della tipologia di variabile per ogni attributo, indicando le chiavi primarie e i vincoli di integrità referenziale, ovvero le chiavi esterne  (foreign keys).
+                        <img src="image/database/modello3.JPG"class="img"/> 
+                     </p>
+                  </div>
+
+                  <div class="sezioniUguali">
+                     <p class="testoMISecondario">
+                        Successivamente ho realizzato lo schema concettuale della struttura di un Data Warehouse.<br><br>
+                        <img src="image/database/modello4.JPG"class="img"/> 
+                     </p>
+                  </div>
+                  </div>
+
+
+                  </div>
+           
+
+                  
+
+               </div>
+         
+
+      
+      <!--</div> -->
+
+      <!--QUi inizia il div contenente l'approfondimento della quarta iniziativa-->
+ 
+      <div class="contenuto moreInfo" id="moreInfo4"> <a name="interactionDesign"> </br> </a>
+         <div class="spazioVuotoAmpio" style="padding: 5%"> </div>
+
+         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+             <h3>Alcuni progetti svolti per un esame di interaction design</h3>
+         </div>
+               <div class="icona_chiusura" onClick="hide4()">
+               <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+               <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </div>
+               <div class="containerMagInfo"> 
+
+                  <div class="box singolo bianco"> 
+                  <p class="testoMISecondario">
+                        <strong>Realizzazione Con Figma</strong> di un prototipo interattivo di una piattaforma per vedere i migliori film e serie tv cult.
+                        <img src="image/figmaInteractionDesign/homepage1.JPG"class="img"/> 
+                     </p>
+                  </div>
+
+                  <div class="box singolo"> 
+                        <p class="testoMIPrincipale" style="text-align: center;">
+                        Schermata di dimostrazione della realizzazione del prototipo
+                        <img src="image/figmaInteractionDesign/prototipo.JPG"class="img"/> 
+                     </p>
+                  </div>
+           
+                  <div class="box singolo verdePetrolio"> 
+                     <p class="testoMIPrincipale">
+                           Questo progetto è fatto al fine di mostrare le aree del sito. Siccome il progetto era basata sull'idea di controllo manuale a distanza(con gesti delle mani), non segue le regole convenzionali di movimento all'interno del sito. Per muoversi nella simulazione sottostante è sufficiente usare la barra spaziatrice o le freccette.   
+                           <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F77BBEmZ5RpOFl3OhEGeY90%2FUntitled%3Ftype%3Ddesign%26node-id%3D303-243%26t%3DYMILMR7Qk12e09Jf-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D466%253A398%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+                        </p>
+                  </div>
+                  
+                <div style="position: relative; color:rgb(142, 128, 104);">
+                     <h3> Altri progetti: </h3>
+                     <div class="box singolo bianco"> 
+
+
+                     <h2>Valutazione euristica di Nielsen in 10 regole</h2>
+                  
+
+                     <p class="testoMISecondario">
+                        <strong>Miglioramento del sito del Carrefour</strong> attraverso l'utilizzo della <strong>valutazione euristica di Jacob Nielsen in 10 regole</strong>, e applicazione delle <strong>linee guida legate agli e-commerce</strong> indicate sul sito 
+                        «Nielsen&Norman Group»:                        
+                        <a href="documents/Presentazione_progetto_ChiaraIacuzzo_VittoriaGiantomassi_ElisaSorri.pptx" class="linkMoreInfo" download>Scarica la presentazione del progetto</a>
+                        Tra le tante migliorie, in particolare una quantità eccessiva di pubblicità nell'homepage non permette all'utente di accingere facilmente a quello che è lo scopo principale del sito: fare la <br>
+                        <img src="image/figmaInteractionDesign/Carrefour0.JPG"class="img" style="float:left; width: 80%; margin-left:10%;"/> 
+                        <img src="image/figmaInteractionDesign/Carrefour.JPG"class="img" style="width: 80%;margin-left: 10%;"/> 
+                     </p>
+                     </div>
+                  </div>
+
+                     <div class="box singolo">
+                        <h2>Analisi di accessibilità e usabilità</h2> 
+                        <p class="testoMIPrincipale">
+
+                        Valutazione sito del comune di Vibo Valentia. <strong>utilizzo del sito Mauve per la rivelazione degli errori</strong>, in particolare analisi degli errori percebili (ad esempio un basso contrasto nei colori al click o all'hover, valore interlinea insufficiente), gli errori comprensibili (assenza etichette su ipertesti/immagini) ed errori utilizzabili. Dal punto di vista degli errori robusti notiamo che non è stato utilizzato role=status per indicare alle tecnologie assistive che l'invio dei moduli è riuscito.
+                        Nel complesso il sito presenta un buon livello di accessibilità(87%). È presente la <strong>pagina 'Accessibilità' con gli obiettivi e il questionario di auto-valutazione</strong>; tuttavia, non è rintracciabile facilmente nel footer, o in altra posizione della homepage, ma solo dalla barra di ricerca.                      
+                        <a href="documents/Valutazione_Sito_ViboValentia.pdf" class="linkMoreInfo" download>Scarica il riassunto del progetto</a>
+                     </p>
+                  </div>
+
+
+               </div>
+         
+
+      
+      </div>
+
+      <!--QUi inizia il div contenente l'approfondimento della quinta iniziativa-->
+      <div class="contenuto moreInfo" id="moreInfo5"> <a name="miraChallenge"> </a>
+         <div id="spazioVuotoAmpio"> </div>
+
+         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+           <h3>Contenuti grafici creati all'interno del progetto 'MiraChallenge'</h3>
+         </div>
+               <div class="icona_chiusura" onClick="hide5()">
+               <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+               <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </div>
+               <div class="containerMagInfo"> 
+
+                     <p class="testoMIPrincipale">
+                        <strong> Mirachallenge è un progetto di Giovani a Mirafiori</strong>, nato con l'idea di rigenerare spazi cittadini e portare eventi di intrattenimento, cultura e sport. All'interno del team "spazi rigenerati", ho realizzato i contenuti comunicative sia cartacei sia online per la pagine Instagram.<br>
+                        Creazione di contenuti con <strong>Canva e/o Photoshop</strong>.
+                     </p>
+                   
+                  
+                  <div style="position: relative; width: 92%; color:rgb(142, 128, 104);">
+                     <h3> Contenuti social per presentare un Contest Fotografico </h3>
+                  </div>
+
+                  <p class="testoMIPrincipale"><strong>Cartoline cartacee</strong><br>
+                     <img src="image/grafica/mirachallenge/1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                     <img src="image/grafica/mirachallenge/2.png"class="img" style="width: 48%;"/> 
+                  </p>
+
+                  <p class="testoMIPrincipale"><strong>Carosello per instagram</strong><br>
+                     <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto.png"class="img" style="float:left; width: 23%;margin-right: 1%;"/> 
+                     <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2.png"class="img" style="width: 23%;margin-right: 1%;"/> 
+                     <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (2).png"class="img" style="width: 23%;margin-right: 1%;"/> 
+                     <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (3).png"class="img" style="width: 23%;margin-right: 1%;"/> 
+
+                  </p>
+
+                  <p class="testoMIPrincipale"><strong>Post instagram per le iniziative "caccia al tesolo" e "Laboratorio natalizio" realizzate per i bambini del quartiere</strong><br>
+                     <img src="image/grafica/mirachallenge/mirafiori1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                     <img src="image/grafica/mirachallenge/Mirafiori2.png"class="img" style="width: 48%;"/> 
+                  </p>
+
+                  <p class="testoMIPrincipale"><strong>Carosello legato alla caccia al tesoro</strong><br>
+                     <img src="image/grafica/mirachallenge/mirafiori3.jpeg"class="img" style="float:left; width: 31%;margin-right: 1%;"/> 
+                     <img src="image/grafica/mirachallenge/Mirafiori4.jpeg"class="img" style="width: 31%;margin-right: 1%;"/> 
+                     <img src="image/grafica/mirachallenge/Mirafiori5.jpeg"class="img" style="width: 31%;margin-right: 1%;"/> 
+
+                  </p>
+
+                  <p class="testoMIPrincipale"><strong>Post instagram e formato volantino cartaceo per l'incontro legato alla creazione di un murales nel quartiere </strong><br>
+                     <img src="image/grafica/mirachallenge/Miraflowers_volantino_murale.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                     <img src="image/grafica/mirachallenge/Miraflowers_post_ig.png"class="img" style="width: 48%;"/> 
+                     <img src="image/grafica/mirachallenge/murales.jpeg"class="img"/>                    
+                     Il murales realizzato presso gli Orti Generali 
+                  </p>
+               </div>
+
+      </div>
+  
+      <!--QUi inizia il div contenente l'approfondimento della sesta iniziativa-->
+      <div class="contenuto moreInfo" id="moreInfo6"> <a id="amiciDelModellismo"></a>
+         <div id="spazioVuotoAmpio"> </div>
+
+
+         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+            <h3>Contenuti grafici creati per l'associazione "Amici del Modellismo"</h3>
+         </div>
+               <div class="icona_chiusura" onClick="hide6()">
+               <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+               <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </div>
+               <div class="containerMagInfo">                    
+                  
+                  <div style="position: relative; width: 92%; color:rgb(142, 128, 104);">
+                     <h3> Volantini legati agli eventi </h3>
+                  </div>
+
+                  <p class="testoMIPrincipale">
+                     <img src="image/grafica/Lego/brickfestborgate.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                     <img src="image/grafica/Lego/attacca e stacca.png"class="img" style="width: 48%;"/> 
+                  </p>
+
+                  <p class="testoMIPrincipale"><strong>Realizzazione di una copertina adesiva da applicare ai mattoncini come oggetto promozionale distribuito ai 30 espositori. </strong><br>
+                     <img src="image/grafica/Lego/2022.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                     <img src="image/grafica/Lego/mattoncino.jpeg"class="img" style="width: 48%;"/> 
+                  </p>
+
+                  <p class="testoMIPrincipale"><strong>Realizzazione volantino pieghevole per l'evento GrugliascoFest "Mattoncini in festa", il volantino è nato con lo scopo di rispondere all'esigenza di le realtà imprenditoriali sponsor dell'iniziativa. </strong><br>
+                     <img src="image/grafica/Lego/1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                     <img src="image/grafica/Lego/2.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/>
+                  Fronte e Retro del volantino
+                  </p>
+
+
+               </div>
+
+      </div>
+
+
+      <!--QUi inizia il div contenente l'approfondimento della settima iniziativa-->
+      <div class="contenuto moreInfo" id="moreInfo7"> <a id="brandImage"></a>
+         <div id="spazioVuotoAmpio"> </div>
+
+
+         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+               <h3> Realizzazione di una nuova immagine per la Casa della Trota </h3>
+         </div>
+               <div class="icona_chiusura" onClick="hide7()">
+               <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+               <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </div>
+               <div class="containerMagInfo">                    
+                  
+              
+                  <div class="box singolo bianco">
+                     <p class="testoMISecondario"> Progetto di rinnovamento dell'immagine per un hotel. La Casa della Trota, o Hotel Ponale, situata sul lago a Riva del Garda, è abbandonata da tempo e in stato di degrado, ma il contesto in naturale in cui è collocato offre, se accompagnato da un rinnovamento dell'immagine, grandi potenzialità. Il nome rimanda all'antico consumo di trote all'interno del ristorante, ma la struttura nel tempo si è espansa per diventare hotel. In passato viveva principlamente di un turismo locale che visitava il posto per la presenza del ristorante con la prelibatezza tipica, tuttavia l'hotel è difficilmente raggiungibile da strada e sarebbe più comodo introdurre come principale punto di approdo un molo sul lago. 
+                        Per un corso frequentato all'interno del master in "Digital marketing per il turismo" abbiamo espresso la necessità per noi che legasse maggiormente la propria identitèà all'acqua, diventando un'esperienza, di lusso (per il pubblico che potrebbe raggiungerlo via lago), che seguisse il soggiorno dei clienti con una tabella di marcia ricca di attività marine.
+
+                        Segue un immagine del prototipo del sito realizzato sulla nuova immagine per il brand, con colori legati al lago, il blu, il verde acqua... ma anche colori caldi per rappresentare l'esperienza accogliente che si vivrebbe nell'hotel.
+                        <img src="image/MarketingTerritoriale/casa_della_trota/1.png"class="img"/>
+
+                        Segue una foto dello stato attuale dell'albergo, e delle immagini generate con l'AI Runaway tramite le indicazioni fornite dalla nostra idea di base. Il prompt che è stato fornito all'AI è molto dettagliato, riportava i colori desiderati e i toni caldi, la richiesta della presenza di elementi naturali tipici della fauna del lago, la volontà di far giungere i clienti via lago e di avere delle attività a stretto contatto con l'acqua.
+                     <img src="image/MarketingTerritoriale/casa_della_trota/2.png"class="img"/> 
+
+                     </p>
+                  </div>
+
+                 
+
+               </div>
+
+      </div>
+      
+
+       <!--QUi inizia il div contenente l'approfondimento dell'ottava iniziativa-->
+      <div class="contenuto moreInfo" id="moreInfo8"> <a id="hotelMarketing"></a>
+         <div id="spazioVuotoAmpio"> </div>
+
+
+         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+               <h3> Miglioramento presenza online di un Hotel </h3>
+         </div>
+               <div class="icona_chiusura" onClick="hide7()">
+               <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+               <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+               </div>
+               <div class="containerMagInfo">                    
+                  
+              
+                  <div class="box singolo bianco">
+                     <p class="testoMISecondario"> Pratiche di digital marketing per aiutare gli hotel nel sottile equilibrio tra OTA e prenotazione diretta agli Hotel. Disintermediare gli Hotel da OTA e agenzie di viaggio tramite i Booking Engine e offerte di cross-selling.
+
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/1.png"class="img"/>
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/2.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/3.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/4.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/5.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/6.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/7.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/8.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/9.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/10.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/11.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/12.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/13.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/14.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/15.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/16.png"class="img"/> 
+                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/17.png"class="img"/> 
+
+                     </p>
+                  </div>
+
+                 
+
+               </div>
+
+      </div>
+  
+      
+         
+         
+         
+         <div class="fondo"> Questo sito, di proprietà di Elisa S., collocato su GitHub e visibile a chiunque abbia il link, attualmente non implementa cookie e non rileva le informazioni personali di chi visita il sito.</div>
+  
+       <!-- <script src="js/jquery.magnify.js"></script>
+        <script>
+         $(document).ready(function() {
+           $('.zoom').magnify();
+         });
+         </script>-->
+      <script src="js/script.js"></script>
+
+      <script>
+         function showSection(id) {
+            const sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => {
+               section.style.display = section.id === id ? 'block' : 'none';
+            });
+
+            const links = document.querySelectorAll('.nav-link');
+            links.forEach(link => link.classList.remove('active'));
+            document.querySelector(`[onclick="showSection('${id}')"]`).classList.add('active');
+         }
+         </script>
+</body> 
+
+
+</html>
+
+ 
