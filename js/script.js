@@ -333,17 +333,13 @@ function show() {
                
 document.addEventListener('mousemove', e => {
   const cursor = document.getElementById('bigCursor');
-
   const hoveredElement = document.elementFromPoint(e.clientX, e.clientY);
 
-  if(hoveredElement && hoveredElement.matches('h1, h2, h3'))
+  if(hoveredElement && hoveredElement.matches('h1,#a,#e,#l,#i,#s,#s1,#o,#r,#r2,#i2'))
     {  
     cursor.style.display = 'block';  
     cursor.style.left = `${e.clientX - 75}px`;
     cursor.style.top = `${e.clientY - 75}px`;
-
-
-
 
     }
     else {
@@ -351,6 +347,24 @@ document.addEventListener('mousemove', e => {
 
     }
 });
+
+document.addEventListener('mousemove', e => {
+  const cursor = document.getElementById('bigCursor2');
+  const hoveredElement = document.elementFromPoint(e.clientX, e.clientY);
+
+  if(hoveredElement.matches('h2'))
+    {  
+    cursor.style.display = 'block';  
+    cursor.style.left = `${e.clientX - 50}px`;
+    cursor.style.top = `${e.clientY - 50}px`;
+
+    }
+    else {
+      cursor.style.display= 'none';
+
+    }
+});
+
 
 
    function leLuci(){
@@ -409,3 +423,92 @@ cadutaLuci();
     muovi();
 
 
+    const letterE= document.getElementById("e");
+    const letterL= document.getElementById("l");
+    const letterI= document.getElementById("i");
+    const letterS= document.getElementById("s");
+    const letterS1= document.getElementById("s1");
+    const letterA= document.getElementById("a");
+    const letterO= document.getElementById("o");
+    const letterR= document.getElementById("r");
+    const letterR2= document.getElementById("r2");
+    const letterI2= document.getElementById("i2");
+
+
+
+    letterL.addEventListener('mouseenter', () => {
+        letterE.classList.add('hovered');
+    });
+
+    letterL.addEventListener('mouseleave', () => {
+        letterE.classList.remove('hovered');
+   });
+
+
+
+    letterI.addEventListener('mouseenter', () => {
+        letterL.classList.add('hovered');
+    });
+
+    letterI.addEventListener('mouseleave', () => {
+        letterL.classList.remove('hovered');
+   });
+
+
+
+   letterS.addEventListener('mouseenter', () => {
+        letterI.classList.add('hovered');
+    });
+
+    letterS.addEventListener('mouseleave', () => {
+        letterI.classList.remove('hovered');
+   });
+
+
+   
+   letterA.addEventListener('mouseenter', () => {
+        letterS.classList.add('hovered');
+    });
+
+    letterA.addEventListener('mouseleave', () => {
+        letterS.classList.remove('hovered');
+   });
+
+
+
+   letterO.addEventListener('mouseenter', () => {
+        letterS1.classList.add('hovered');
+    });
+
+    letterO.addEventListener('mouseleave', () => {
+        letterS1.classList.remove('hovered');
+   });
+
+
+   letterR.addEventListener('mouseenter', () => {
+        letterO.classList.add('hovered');
+    });
+
+    letterR.addEventListener('mouseleave', () => {
+        letterO.classList.remove('hovered');
+   });
+
+
+
+      letterR2.addEventListener('mouseenter', () => {
+        letterR.classList.add('hovered');
+    });
+
+    letterR2.addEventListener('mouseleave', () => {
+        letterR.classList.remove('hovered');
+   });
+
+
+
+    letterI2.addEventListener('mouseenter', () => {
+        letterR2.classList.add('hovered');
+    });
+
+    letterI2.addEventListener('mouseleave', () => {
+        letterR2.classList.remove('hovered');
+   });
