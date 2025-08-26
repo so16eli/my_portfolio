@@ -1,10 +1,10 @@
 <html>
 <head>
-    <link rel="stylesheet" href="css/stilePF.css">
-        <link rel="stylesheet" href="css/funzioneSCSS.css">
+   <title>Portofolio E.S.</title>
+   <link rel="stylesheet" href="css/stilePF.css">
+   <link rel="stylesheet" href="css/funzioneSCSS.css">
 
     <link rel="stylesheet" href="css/magnify.css">
-
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -76,12 +76,12 @@
             
          
          <nav class="nav">
-         <a href="#progetto" class="nav-link active" onclick="showSection('home')">Tutto</a>
-
-         <a href="#progetto" class="nav-link active" onclick="showSection('Wordpress')">SEO e Wordpress</a>
-         <a href="#progetto" class="nav-link" onclick="showSection('DB')">Progettazione DB</a>
-         <a href="#progetto" class="nav-link" onclick="showSection('Design')">Design</a>
-         <a href="#progetto" class="nav-link" onclick="showSection('Grafica')">Grafica</a>
+         
+            <a href="#progetto" class="nav-link active" onclick="showSection('home'); hideAll();">Tutto</a>
+            <a href="#progetto" class="nav-link active" onclick="showSection('Wordpress')">SEO e Wordpress</a>
+            <a href="#progetto" class="nav-link" onclick="showSection('DB')">Progettazione DB</a>
+            <a href="#progetto" class="nav-link" onclick="showSection('Design')">Design</a>
+            <a href="#progetto" class="nav-link" onclick="showSection('Grafica')">Grafica</a>
 
          </nav>
          
@@ -113,6 +113,8 @@
 
       <div class="contenitoreInfo">
          <div id="spazioVuoto"> </div>
+                     <div id="bigCursor2"></div>
+
 
          <!--sezione che mostra tutti i risultati-->
          <div class="anti-container"><a id="progetto"><h3 style="color: #2f3732;"> Progetti </h3><h4> ...sito in costante aggiornamento :) </h4> </a></div>
@@ -120,7 +122,6 @@
                
               <!--QUi inizia il div contenente la settima iniziativa-->
                <div class="container">
-                              <div id="bigCursor2"></div>
 
                         <div class="categoria">Creazione contenuti - Brand Image</div> <div class="dettagli" onClick="show7()"> Leggi di più </div>
                         <div class="zoom-container">
@@ -128,7 +129,8 @@
                         </div>
 
                      <div class="contenuti" >  
-                           <h2><span class="categoriaFont">Case study 5</span><span class="parolaChiaveTitolo"> Creazione brand</span> <br>L'AI per la generazione di immagini per raccontare nuove idee</h2>
+                           <span class="categoriaFont">Case study 5</span><span class="parolaChiaveTitolo"> Creazione brand</span>
+                            <h2 onClick="show7()"> L'AI per la generazione di immagini per raccontare nuove idee</h2>
                            <p style="padding-bottom: 8%;"> </p>
                      </div>   <div class="icona_more" onClick="show7()">
                            <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
@@ -145,14 +147,32 @@
                   </div>
 
                <div class="contenuti" >  
-                     <h2><span class="categoriaFont">Case study 8 </span><span class="parolaChiaveTitolo"> Digital marketing - Hotel - Turismo</span> <br>Miglioramento presenza online di un Hotel</h2>
-                     <p style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
+                     <span class="categoriaFont">Case study 8 </span><span class="parolaChiaveTitolo"> Digital marketing - Hotel - Turismo</span> <br>
+                     <h2 onClick="show3()">Miglioramento presenza online di un Hotel</h2>
+                     
                </div>    <div class="icona_more" onClick="show3()">
                      <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
                      <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
                   </div>  
                   
                </div>
+
+               <!--QUi inizia il div contenente la seconda iniziativa-->
+                  <div class="container">
+                     <div class="categoria">Siti Realizzati - Wordpress - Seo</div> <div class="dettagli" onClick="show2()"> Leggi di più </div>
+                     <div class="zoom-container">
+                        <img src="image/MarketingTerritoriale/homepageMT.png" id="immagineCarat" onClick="show2()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
+                     </div>
+
+                  <div class="contenuti" >  
+                        <h2 onClick="show2()"><span class="categoriaFont">Case study 2 </span><span class="parolaChiaveTitolo"> Place Marketing</span> <br>Marketing territoriale </h2>
+                        <p style="padding-bottom: 8%;">Un sito realizzato in Wordpress. Analisi keyword per la SEO. L'obiettivo era raccontare le modalità di applicazione del marketing al territorio.</p>
+                  </div>    <div class="icona_more" onClick="show2()">
+                        <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
+                        <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
+                     </div>  
+                     
+                  </div>
                
                <!--QUi inizia il div contenente la prima iniziativa-->
                   <div class="container">
@@ -162,7 +182,8 @@
                      </div>
 
                      <div class="contenuti" >  
-                           <h2 onClick="show()"><span class="categoriaFont">Case study 1 </span><span class="parolaChiaveTitolo"> APPI</span> <br>It's so nice to be healthy </h2>
+                           <span class="categoriaFont">Case study 1 </span><span class="parolaChiaveTitolo"> APPI</span> 
+                           <h2 onClick="show()">It's so nice to be healthy </h2>
                            <p style="padding-bottom: 8%;">Progettazione e implementazione di un sito di fornitura di materiali per la protezione della salute durante l'emergenza Covid-19</p>
                      </div>
 
@@ -174,23 +195,6 @@
                   </div>
 
 
-               <!--QUi inizia il div contenente la seconda iniziativa-->
-                  <div class="container">
-                     <div class="categoria">Siti Realizzati - Wordpress - Seo</div> <div class="dettagli" onClick="show2()"> Leggi di più </div>
-                     <div class="zoom-container">
-                        <img src="image/MarketingTerritoriale/homepageMT.png" id="immagineCarat" onClick="show2()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
-                     </div>
-
-                  <div class="contenuti" >  
-                        <h2><span class="categoriaFont">Case study 2 </span><span class="parolaChiaveTitolo"> Place Marketing</span> <br>Marketing territoriale </h2>
-                        <p style="padding-bottom: 8%;">Un sito realizzato in Wordpress. Analisi keyword per la SEO. L'obiettivo era raccontare le modalità di applicazione del marketing al territorio.</p>
-                  </div>    <div class="icona_more" onClick="show2()">
-                        <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
-                        <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
-                     </div>  
-                     
-                  </div>
-
 
                <!--QUi inizia il div contenente la terza iniziativa-->
                <div class="container">
@@ -200,7 +204,8 @@
                   </div>
 
                <div class="contenuti" >  
-                     <h2><span class="categoriaFont">Case study 3 </span><span class="parolaChiaveTitolo"> Progettazione database per il sito di un Ristorante</span> <br>Utilizzo di Modelli concettuali e logici</h2>
+                     <span class="categoriaFont">Case study 3 </span><span class="parolaChiaveTitolo"> Progettazione database per il sito di un Ristorante</span> 
+                     <h2 onClick="show3()">Utilizzo di Modelli concettuali e logici</h2>
                      <p style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
                </div>    <div class="icona_more" onClick="show3()">
                      <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
@@ -220,7 +225,8 @@
                   </div>
 
                <div class="contenuti" >  
-                     <h2><span class="categoriaFont">Case study 4 </span><span class="parolaChiaveTitolo"> Interaction design</span> <br>Prototipo realizzato con Figma e analisi di piattaforme esistenti</h2>
+                    <span class="categoriaFont">Case study 4 </span><span class="parolaChiaveTitolo"> Interaction design</span> 
+                     <h2 onClick="show4()">Prototipo realizzato con Figma e analisi di piattaforme esistenti</h2>
                      <p style="padding-bottom: 8%;"> </p>
                </div>  
                   
@@ -239,7 +245,8 @@
                   </div>
 
                <div class="contenuti" >  
-                     <h2><span class="categoriaFont">Contenuti social </span><span class="parolaChiaveTitolo"> Giovani a Mirafiori</span> <br>Contenuti grafici per iniziative culturali dell'associazione Giovani a Mirafiori</h2>
+                     <span class="categoriaFont">Contenuti social </span><span class="parolaChiaveTitolo"> Giovani a Mirafiori</span> 
+                     <h2 onClick="show5()">Contenuti grafici per iniziative culturali dell'associazione Giovani a Mirafiori</h2>
                      <p style="padding-bottom: 8%;"> </p>
                </div>    <div class="icona_more" onClick="show5()" >
                      <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
@@ -255,7 +262,8 @@
                         </div>
 
                      <div class="contenuti" >  
-                           <h2><span class="categoriaFont">Contenuti social</span><span class="parolaChiaveTitolo"> Comunicazione legata a eventi di modellismo</span> <br>Contenuti grafici per pubblicizzare eventi legati ai Lego</h2>
+                           <span class="categoriaFont">Contenuti social</span><span class="parolaChiaveTitolo"> Comunicazione legata a eventi di modellismo</span> 
+                           <h2 onClick="show6()">Contenuti grafici per pubblicizzare eventi legati ai Lego</h2>
                            <p style="padding-bottom: 8%;"> </p>
                      </div>   <div class="icona_more" onClick="show6()">
                            <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
@@ -281,7 +289,8 @@
                      </div>
 
                      <div class="contenuti" >  
-                           <h2><span class="categoriaFont">Case study 2 </span><span class="parolaChiaveTitolo"> Place Marketing</span> <br>Marketing territoriale </h2>
+                           <span class="categoriaFont">Case study 2 </span><span class="parolaChiaveTitolo"> Place Marketing</span> 
+                           <h2 onClick="show2()">Marketing territoriale </h2>
                            <p style="padding-bottom: 8%;">Un sito realizzato in Wordpress. Analisi keyword per la SEO. L'obiettivo era raccontare le modalità di applicazione del marketing al territorio.</p>
                      </div>    
                      <div class="icona_more" onClick="show2()">
@@ -295,7 +304,7 @@
          <!--sezione che mostra i risultati relativi ai database-->
 
          <div id="DB" class="content-section" style="display:none;">
-               <div class="anti-container"><a id="progetto"><h4> ...sito in costante aggiornamento </h4></a></div>
+               <div class="anti-container"><a id="progetto"></a></div>
                   <!--QUi inizia il div contenente la terza iniziativa-->
                   <div class="container">
                      <div class="categoria">Progettazione - Database</div> <div class="dettagli" onClick="show3()"> Leggi di più </div>
@@ -304,7 +313,8 @@
                      </div>
 
                   <div class="contenuti" >  
-                        <h2><span class="categoriaFont">Case study 3 </span><span class="parolaChiaveTitolo"> Progettazione database per il sito di un Ristorante</span> <br>Utilizzo di Modelli concettuali e logici</h2>
+                        <span class="categoriaFont">Case study 3 </span><span class="parolaChiaveTitolo"> Progettazione database per il sito di un Ristorante</span> 
+                        <h2 onClick="show3()">Utilizzo di Modelli concettuali e logici</h2>
                         <p style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
                   </div>    <div class="icona_more" onClick="show3()">
                         <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
@@ -317,7 +327,7 @@
          <!--sezione che mostra i risultati relativi al web design-->
 
          <div id="Design" class="content-section" style="display:none;">
-                  <div class="anti-container"><a id="progetto"><h4>  ...sito in costante aggiornamento </h4></a></div>
+                  <div class="anti-container"><a id="progetto"></a></div>
                   <!--QUi inizia il div contenente la quarta iniziativa-->
                      <div class="container">
                         <div class="categoria">Interaction design - Figma</div> <div class="dettagli" onClick="show4()"> Leggi di più </div>
@@ -326,7 +336,8 @@
                         </div>
 
                      <div class="contenuti" >  
-                           <h2><span class="categoriaFont">Case study 4 </span><span class="parolaChiaveTitolo"> Interaction design</span> <br>Prototipo realizzato con Figma e analisi di piattaforme esistenti</h2>
+                           <span class="categoriaFont">Case study 4 </span><span class="parolaChiaveTitolo"> Interaction design</span> 
+                           <h2 onClick="show4()">Prototipo realizzato con Figma e analisi di piattaforme esistenti</h2>
                            <p style="padding-bottom: 8%;"> </p>
                      </div>  
                         
@@ -345,7 +356,8 @@
                               </div>
 
                            <div class="contenuti" >  
-                                 <h2><span class="categoriaFont">Case study 5</span><span class="parolaChiaveTitolo"> Creazione brand</span> <br>L'AI per la generazione di immagini per raccontare nuove idee</h2>
+                                 <span class="categoriaFont">Case study 5</span><span class="parolaChiaveTitolo"> Creazione brand</span> 
+                                 <h2 onClick="show7()">L'AI per la generazione di immagini per raccontare nuove idee</h2>
                                  <p style="padding-bottom: 8%;"> </p>
                            </div>   <div class="icona_more" onClick="show7()">
                                  <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
@@ -360,7 +372,8 @@
          <!--sezione che mostra i risultati relativi alla grafica-->
 
          <div id="Grafica" class="content-section" style="display:none;">
-                  <div class="anti-container"><a id="progetto"><h4> ...sito in costante aggiornamento </h4></a></div>
+                  <div class="anti-container"><a id="progetto"></a></div>
+                  
                   <!--QUi inizia il div contenente la quinta iniziativa-->
                   <div class="container">
                      <div class="categoria">Grafica - Creazione contenuti social</div> <div class="dettagli" onClick="show5()"> Leggi di più </div>
@@ -369,9 +382,10 @@
                      </div>
 
                   <div class="contenuti" >  
-                        <h2><span class="categoriaFont">Contenuti social </span><span class="parolaChiaveTitolo"> Giovani a Mirafiori</span> <br>Creazione contenuti grafici per iniziative culturali dell'associazione Giovani a Mirafiori</h2>
+                        <span class="categoriaFont">Contenuti social </span><span class="parolaChiaveTitolo"> Giovani a Mirafiori</span> 
+                        <h2 onClick="show5()">Creazione contenuti grafici per iniziative culturali dell'associazione Giovani a Mirafiori</h2>
                         <p style="padding-bottom: 8%;"> </p>
-                  </div>    <div class="icona_more" onClick="show5()" >
+                  </div>    <div class="icona_more" onClick="show5()">
                         <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
                         <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
                   </a> </div>  
@@ -385,7 +399,8 @@
                      </div>
 
                   <div class="contenuti" >  
-                        <h2><span class="categoriaFont">Contenuti social</span><span class="parolaChiaveTitolo"> Comunicazione legata a eventi di modellismo</span> <br>Creazione contenuti grafici per pubblicizzare eventi legati a modellismo e ai mattoncini</h2>
+                        <span class="categoriaFont">Contenuti social</span><span class="parolaChiaveTitolo"> Comunicazione legata a eventi di modellismo</span> 
+                        <h2 onClick="show6()">Creazione contenuti grafici per pubblicizzare eventi legati a modellismo e ai mattoncini</h2>
                         <p style="padding-bottom: 8%;"> </p>
                   </div>   <div class="icona_more" onClick="show6()">
                         <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
@@ -416,16 +431,7 @@
                </div>  
                
             </div>-->
-
-
-
-         
-            
-      
-          
-
-              
-         
+ 
             
       </div>
   
@@ -900,7 +906,7 @@
          function showSection(id) {
             const sections = document.querySelectorAll('.content-section');
             sections.forEach(section => {
-               section.style.display = section.id === id ? 'block' : 'none';
+               section.style.display = section.id === id ? 'flex' : 'none';
             });
 
             const links = document.querySelectorAll('.nav-link');

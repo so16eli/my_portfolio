@@ -89,7 +89,19 @@ const approfondimenti6 = document.querySelector('#moreInfo6');
 const approfondimenti7 = document.querySelector('#moreInfo7');
 
 
+function hideAll() {
+  const tuttiApprofondimenti = document.querySelectorAll(".moreInfo");
 
+  tuttiApprofondimenti.forEach(e => {
+    e.classList.add("fadeInDown");
+    setTimeout(()=> {
+        consol.log("nascondo:", e);
+       e.style.display = 'none';
+    }, 1000);
+  
+
+  });
+  }
 
 
 /*for(var i=0; i<approfondimenti.length; i++){*/
@@ -355,8 +367,8 @@ document.addEventListener('mousemove', e => {
   if(hoveredElement.matches('h2'))
     {  
     cursor.style.display = 'block';  
-    cursor.style.left = `${e.clientX - 50}px`;
-    cursor.style.top = `${e.clientY - 50}px`;
+    cursor.style.left = `${e.clientX - 10}px`;
+    cursor.style.top = `${e.clientY - 10}px`;
 
     }
     else {

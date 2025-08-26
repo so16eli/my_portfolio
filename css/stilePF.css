@@ -134,7 +134,7 @@ html::-webkit-scrollbar-thumb{
     scroll-snap-type: x mandatory;
     background-color: #1C1018;
     transition: background-color 0.4s ease-in-out;
-        z-index: 0 !important;
+    z-index: 1 !important;
 
 }
 
@@ -451,8 +451,8 @@ h2{
 
 }
 
-h2:hover{
-    color: rgba(214, 180, 105, 1);
+.container:hover h2, h2:hover{
+    color: rgb(177, 149, 88);
         text-shadow:
                 1px -2px 0 white,
                 2px -2px 0 white,
@@ -483,6 +483,7 @@ h4{
     font-size: 18px;
     color:#a89e66;
     margin: 0%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-right: 4%;
     font-weight: 300;
 }
@@ -490,7 +491,9 @@ h4{
 .parolaChiaveTitolo{
     color: brown;
     margin: 0%;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 strong{
@@ -630,7 +633,7 @@ strong{
 .container:hover .dettagli{
     opacity: 1;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
-    background-color: rgba(214, 180, 105, 1);
+    background-color: rgb(186, 157, 92);
     font-weight: 400;
 }
 
@@ -938,10 +941,9 @@ p{
 
 #bigCursor2 {
   position: fixed;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-    background-color: rgba(214, 180, 105, 1);
+  width: 130px;
+  height: 30px;
+    background-color: yellow;
   pointer-events: none;
   z-index: 0 !important;
 }
