@@ -451,6 +451,7 @@ h2{
 
 }
 
+/*
 .container:hover h2, h2:hover{
     color: rgb(177, 149, 88);
         text-shadow:
@@ -459,7 +460,7 @@ h2{
                 -2px 2px 0 white,
                 1px 1px 0 white;
 
-    }
+    } */
 
 h3{
     text-align: center; 
@@ -1137,8 +1138,9 @@ p{
     }
     #spazioSinistra{
         margin-left: 2%;
+        border-left: 2px solid #d9d9d9;
         width: 16%;
-        padding: 4% 0% 0%;
+        padding: 4% 2% 0%;
         word-wrap: break-word;
         word-break: keep-all;
         text-align: left;
