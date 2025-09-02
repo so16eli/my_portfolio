@@ -14,8 +14,16 @@ body{
 .title{
     position: relative; 
     float: left; 
-    width: 90%; 
+    width: 80%; 
     color:rgb(142, 128, 104);
+    min-height:fit-content !important;
+    margin-bottom: 5%;
+    
+}
+
+.title h3{
+    margin-left: 10%;
+    text-align: left;
 }
 
  html::-webkit-scrollbar{
@@ -71,6 +79,13 @@ html::-webkit-scrollbar-thumb{
     animation: slide 10s both;
     z-index: 0;
 }
+
+
+.parolaNome {
+    display: inline-flex;
+    flex-wrap: nowrap;
+}
+
 /*
 @keyframes slide{
     0%{
@@ -124,7 +139,7 @@ html::-webkit-scrollbar-thumb{
 /*creazione della nav con gli argomenti di cui so qualcosa*/
 .nav{
     position: fixed;
-    bottom: 0;
+    bottom: 0 !important;
     width: 100%;
     height: 10%;
     display:flex;
@@ -133,7 +148,6 @@ html::-webkit-scrollbar-thumb{
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     background-color: #1C1018;
-    transition: background-color 0.4s ease-in-out;
     z-index: 1 !important;
 
 }
@@ -160,16 +174,30 @@ html::-webkit-scrollbar-thumb{
     font-weight: 600;
 }
 
-.nav.scrolla{
+/*.nav.scrolla{
     background-color: white;
     background-color: #1c1018e7;
 
     -webkit-box-shadow: 0px 3px 53px -28px rgba(66, 68, 90, 1);
     -moz-box-shadow: 0px 3px 53px -28px rgba(66, 68, 90, 1);
     box-shadow: 0px 3px 53px -28px rgba(66, 68, 90, 1);
+} */
+
+
+@keyframes SXaDX {
+    0%{
+        transform: translateX(-40px);
+    }
+    35%{
+        transform: translateX(20px);
+    }
+    70%{
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
 }
-
-
 
 /* Firefox 
 .nav {
@@ -222,53 +250,7 @@ html::-webkit-scrollbar-thumb{
   
   } */
 
-.elementiNav{
-    font-size: 13px;
-    width: 10%;
-    color:#B48291;
-    opacity: 0.3;
-    margin: 0.7%;
-    padding: 0.7%;
-    text-align: center;
-    align-items: center;
-    height: 30%;
-    margin-top: 1%;
-    border-radius: 8px 8px 8px 8px;
-    -moz-border-radius: 8px 8px 8px 8px;
-    -webkit-border-radius: 8px 8px 8px 8px;
-    border: 1px solid #959595;
-    -webkit-box-shadow: 0px 7px 22px -10px rgba(41,41,41,1);
-    -moz-box-shadow: 0px 7px 22px -10px rgba(41,41,41,1);
-    box-shadow: 0px 7px 22px -10px rgba(41,41,41,1);
-    transition: color 0.4s ease-in-out;
 
-}
-.elementiNav:hover{
-    color: rgb(167, 155, 255);
-    opacity: 0.7;
-    font-weight: bolder !important;
-    background-color: #3a443e;
-
-
-}
-
-    .elementiNav.scrolled{
-        opacity: 1;
-        box-shadow: none;
-        background-color: #3a443e;
-        border-style: none;
-        }
-
- 
-    .elementiNav.scrolled:hover{
-        color: rgb(167, 155, 255);
-        opacity: 1;
-        font-weight: bolder !important;
-        -webkit-box-shadow: 0px 7px 22px -10px rgb(125, 120, 120);
-        -moz-box-shadow: 0px 7px 22px -10px rgb(125, 120, 120);
-        box-shadow: 0px 7px 22px -10px rgb(125, 120, 120);
-
-    } 
 
 
 
@@ -372,10 +354,15 @@ html::-webkit-scrollbar-thumb{
 
 .anti-container{
     position: static;
-    margin-left: 1.5%;
+    width: 90%;
     margin-bottom: 1.5%;
+    margin-left: 5%;
+    text-align: center;
 }
 
+h4{
+    margin-bottom: 10%;
+}
 
 .container #immagineCarat{
     height: 30%;
@@ -404,6 +391,9 @@ html::-webkit-scrollbar-thumb{
     position: relative;
     float: left;
     padding-bottom: 20%;
+    word-break: keep-all;
+    flex-wrap: wrap;
+    word-wrap: normal; 
 }
 
 h1{
@@ -412,7 +402,11 @@ h1{
   font-size: 90px;
   color:rgba(214, 180, 105, 1);
   font-style: normal;
-  margin-right: 5%;
+  flex-wrap: wrap;
+}
+
+h1 span {
+    display: inline-block;
 }
 
 #e:hover, #e:hover  ~ #l, 
@@ -443,12 +437,10 @@ h2{
     font-family: 'Amaranth', sans-serif;
     background: #f2a705;
     background: linear-gradient(90deg, rgba(242, 167, 5, 1) 0%, rgba(235, 183, 70, 1) 50%, rgba(214, 180, 105, 1) 100%);    background-clip: text;
-    font-size: 35px;
+    font-size: 32px;
     color: transparent;
     text-align: left;
-    z-index: 1;
-                
-
+    z-index: 1;           
 }
 
 /*
@@ -493,6 +485,7 @@ h4{
     color: brown;
     margin: 0%;
     font-size: 16px;
+    word-spacing: 0.3em;
     font-weight: 600;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -625,6 +618,7 @@ strong{
     position: relative;
     float: left;
     padding-top: 5%;
+    padding-bottom: 5%;
     padding-left: 5%;
     font-family: 'Kanit', sans-serif; 
     font-size: 15px;
@@ -649,6 +643,7 @@ strong{
     display: none;
     z-index: 1;
     border-top: 2px solid wheat;
+    padding-bottom: 30%;
 }
 
 #moreInfo1,#moreInfo2,#moreInfo3,#moreInfo4, #moreinfo5, #moreinfo6, #moreInfo7, #moreInfo8 {
@@ -661,6 +656,7 @@ strong{
 /*stile contenuto estetico maggiori informazioni*/
 
 .containerMagInfo{
+    clear: left;
  margin: 8%;
 }
 .testoMagInfo, .imgMagInfo, .img{
@@ -708,11 +704,15 @@ strong{
     }
 
     .testoMISecondario{
-        text-align: center;        
         margin-top: 2%;
         margin-bottom: 1%;
         font-size: large;
-        color: white;
+        text-align: justify;
+        color: #000000;
+        font-size: 21px;
+        word-wrap: break-word;
+        text-justify: inter-word;
+        word-break: break-all;
     }
 
     .moreInfo::-webkit-scrollbar-thumb{
@@ -911,9 +911,13 @@ p{
     margin-bottom: 2%;
     color: #E0E5E3;
     font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+            word-break: break-all;
+
+
 }
 .testoMIPrincipale strong {
         color:#a398f7;
@@ -1031,19 +1035,19 @@ p{
   .fioreDecorativo .giglioBianco {
     position: absolute;
     top: -10%;
-    left: -17%;
+    left: -19%;
   }
 
     .fioreDecorativo .giglioBianco2 {
     position: absolute;
     top: -10%;
-    right: -17%;
+    right: -20%;
   }
 
  .giglioBianco3 {
     position: absolute;
     margin-top: -20%;
-    right: -17%;
+    right: -20%;
     transform: scaleX(-1);
     z-index: -1;
 
@@ -1072,11 +1076,7 @@ p{
 
 } */
 
-.testoMISecondario{
-    text-align:center;
-    text-align: justify;
-    color: #000000;
-}
+
 
     /*PARTE DEDICATA AI TRE TEMI*/
 
@@ -1149,6 +1149,7 @@ p{
         width:48%;
         padding:4% 2% 0%;
         text-align: justify !important;
+        hyphens: auto;
     }
 
     .elSingoloGenerico{
@@ -1194,7 +1195,7 @@ padding: 5%;
     transition:background-image 2s ease-in-out;
 } */
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 576px) {
    
 .container{
      width: 95% !important;
@@ -1202,18 +1203,42 @@ padding: 5%;
     margin-right: 2.5%;
 }
 
+.parolaNome {
+    width: 100%;
+    margin-bottom: -20%;
+    justify-content: flex-start;
+}
+
+.nav{
+    width: 100%;
+    transform: translate(0);
+    justify-content: left;
+    font-size: 16px;
+}
 
 .title h3{ 
     position: relative; 
     float: left; 
-    width: 95%;
-    margin: 5%; 
+    width: 90%;
+    margin: 5%;
+    margin-top: 30%;
+    margin-left: 10%; 
     color:rgb(70, 68, 64) !important;
+    animation: compareDalBasso 3s ease-in;
+    font-size: 38px;
 }
+
+@keyframes compareDalBasso{
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+} 
 
 .title {
         width: 70%; 
-
 }
 
 
@@ -1223,41 +1248,89 @@ padding: 5%;
 }
 
 h1{
-    margin-top: 50%;
-    font-size: 80px;
+    margin-top: 70%;
+    width: 80%;
+    margin-left: 20%;
+    font-size: 60px;
+    flex-direction: column;
+    align-items:center !important;
+    gap: 0;
 }
+
+h1 span {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2{
+    font-size: 44px;
+}
+
+.anti-container h3 {
+    padding: 0%;
+    padding-bottom: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+
 h3{
     font-size: 30px;
     text-align: left;
     padding: 10%;
-
+    color: #2f3732;
 }
+
     .fioreDecorativo{
-        top:-10%;
+        top:5%;
     }
 
     .fioreDecorativo img{
-        width: 80%;
+        width: 70%;
     }
 
         .fioreDecorativo .giglioBianco {
-        left: -30%;
+        left: -15%;
     }
 
         .fioreDecorativo .giglioBianco2 {
-        right: -30%;
+        right: -15%;
     }
 
         .fioreDecorativo .giglioBianco3 {
-        right: -30%;
-            margin-top: -150%;
+        right: -15%;
+        margin-top: -160%;
 
     }
 
+.categoria {
+    font-size: 22px;
+    padding-top: 20%;
+}
+
+
+.dettagli{
+    margin-bottom: 10%;
+        clip-path: polygon(0 0, 100% 0, 100% 50%);
+}
+
+.categoriaFont{
+    font-size: 22px;
+}
+
+.parolaChiaveTitolo {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p{
+    font-size: 22px;
+}
 
 .icona_chiusura{
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 15%;
     margin-right: 5%;
     padding: 1%;  
 }
@@ -1265,6 +1338,10 @@ h3{
 .testoMIPrincipale, strong, .testoMagInfo, .testoMagInfoDestra{
     font-size: 21px;
     text-align: justify;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 3%;
+    word-wrap: break-word;
 
 }
 
@@ -1277,7 +1354,11 @@ h3{
     flex-direction: column;
 }
 #spazioIntroSx {
-    width: 95% !important;
+    margin-right: 10%;
+    
+    width: 100% !important;
+    word-break: keep-all;
+
 }
 #spazioSinistra{
     width: 95%;

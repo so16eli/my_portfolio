@@ -1,31 +1,4 @@
-//FUNZIONE CHE PERMETTE DI CAMBIARE COLORE ALLO SCORRIMENTO ALLA NAVBAR A TUTTI GLI ELEMENTI TRAMITE UN CICLO FOREACH
-document.addEventListener('scroll', () => {
-const elnav=document.querySelectorAll('.elementiNav');
-const nav=document.querySelectorAll('.nav');
 
-[].forEach.call(elnav, function(params) {
-  if(window.scrollY > 300){
-  
-    params.classList.add('scrolled');
-  
-  }
-  else{
-    params.classList.remove('scrolled');
-  }
-});
-
-[].forEach.call(nav, function(parametri) {
-  if(window.scrollY > 300){
-  
-    parametri.classList.add('scrolla');
-  
-  }
-  else{
-    parametri.classList.remove('scrolla');
-  }
-});
-
-} );
 
 
 
@@ -87,6 +60,7 @@ const approfondimenti4 = document.querySelector('#moreInfo4');
 const approfondimenti5 = document.querySelector('#moreInfo5');
 const approfondimenti6 = document.querySelector('#moreInfo6');
 const approfondimenti7 = document.querySelector('#moreInfo7');
+const approfondimenti8 = document.querySelector('#moreInfo8');
 
 
 function hideAll() {
@@ -242,7 +216,7 @@ function show() {
 
 
    function show8() {
-    approfondimenti7.style.display = 'block';
+    approfondimenti8.style.display = 'block';
     document.querySelector("#moreInfo8").classList.remove("fadeInDown");
     document.querySelector("#moreInfo8").classList.add("fadeInTop");
     const tempoAncora = setTimeout(attivaAncora, 1000);    

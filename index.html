@@ -1,8 +1,7 @@
-<html>
+<html lang="it">
 <head>
    <title>Portofolio E.S.</title>
    <link rel="stylesheet" href="css/stilePF.css">
-   <link rel="stylesheet" href="css/funzioneSCSS.css">
 
     <link rel="stylesheet" href="css/magnify.css">
 
@@ -40,18 +39,22 @@
          <div class="header">
             <div class="sfondo">
              
-                     <h1> 
-                        <span id="e">E</span>
-                        <span id="l">l</span>
-                        <span id="i">i</span>
-                        <span id="s">s</span>
-                        <span id="a">a</span>
+                     <h1>
+                        <span class="parolaNome">
+                           <span id="e">E</span>
+                           <span id="l">l</span>
+                           <span id="i">i</span>
+                           <span id="s">s</span>
+                           <span id="a">a</span>
+                        </span>
                         &nbsp;
-                        <span id="s1">s</span>
+                        <span class="parolaNome">
+                        <span id="s1">S</span>
                         <span id="o">o</span>
                         <span id="r">r</span>
                         <span id="r2">r</span>
                         <span id="i2">i</span>
+                        </span>
                      </h1>
                         <a href="#progetto">
                         <!--<h3 style="color: #B48291"> Benvenuti </h3>-->
@@ -84,17 +87,7 @@
             <a href="#progetto" class="nav-link" onclick="showSection('Grafica')">Grafica</a>
 
          </nav>
-         
-         <!--<div class="nav"> 
-            <div class="elementiNav">Siti Realizzati</div>
-            <div class="elementiNav">elemento2</div>
-            <div class="elementiNav">elemento3</div>
-            <div class="elementiNav">elemento4</div>
-            <div class="elementiNav">elemento5</div>
-            <div class="elementiNav">elemento6</div>
-            <div class="elementiNav">elemento7</div>
-         </div> --> 
-         
+     
             
        <!--  <section class="section"> 
                <div class="Colonne InnImage">
@@ -117,13 +110,13 @@
 
 
          <!--sezione che mostra tutti i risultati-->
-         <div class="anti-container"><a id="progetto"><h3 style="color: #2f3732;"> Progetti </h3><h4> ...sito in costante aggiornamento :) </h4> </a></div>
+         <div class="anti-container"><a id="progetto"></a><h3 style="color: #2f3732;"> Progetti </h3><h4> ...sito in costante aggiornamento :) </h4> </div>
          <div id="home" class="content-section">
                
               <!--QUi inizia il div contenente la settima iniziativa-->
                <div class="container">
 
-                        <div class="categoria">Creazione contenuti - Brand Image</div> <div class="dettagli" onClick="show7()"> Leggi di più </div>
+                        <div class="categoria" style="padding-bottom: 0% !important; padding-bottom: 0%;">Creazione contenuti - Brand Image</div> <div class="dettagli" onClick="show7()"> Leggi di più </div>
                         <div class="zoom-container">
                            <img src="image/MarketingTerritoriale/casa_della_trota/casadellaTrota.jpg" id="immagineCarat" onClick="show7()" class="zoom" data-magnify-src="image/appi/Immagine3.JPG">
                         </div>
@@ -148,9 +141,9 @@
 
                <div class="contenuti" >  
                      <span class="categoriaFont">Case study 8 </span><span class="parolaChiaveTitolo"> Digital marketing - Hotel - Turismo</span> <br>
-                     <h2 onClick="show3()">Miglioramento presenza online di un Hotel</h2>
+                     <h2 onClick="show8()">Miglioramento presenza online di un Hotel</h2>
                      
-               </div>    <div class="icona_more" onClick="show3()">
+               </div>    <div class="icona_more" onClick="show8()">
                      <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
                      <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
                   </div>  
@@ -449,15 +442,14 @@
          <div class="title">
             <h3>APPI: Avviso per prodotti introvabili</h3>
          </div>
+      
                <div class="icona_chiusura" onClick="hide()">
                <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
                <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
                </div>
                <div class="containerMagInfo"> 
                   <div class="box divisione bianco">
-                        <div id="spazioIntroSx">
-                        <p>APPI è un progetto realizzato nel 2020 all'interno di un'iniziativa universitaria "Ideazione di soluzioni ICT per la gestione di crisi", che prevedeva la progetta di una piattaforma digitale per aiutare le imprese a trovare gli articoli che in quel periodo risultavano di difficile reperimento, mostrando i fornitori più vicini alla propria sede. </p>
-                        </div>
+                        <p class="testoMISecondario"  style="width: 100%;">Progetto realizzato nel 2020 all'interno di un'iniziativa universitaria "Ideazione di soluzioni ICT per la gestione di crisi", che prevedeva la progetta di una piattaforma digitale per aiutare le imprese a trovare gli articoli che in quel periodo risultavano di difficile reperimento, mostrando i fornitori più vicini alla propria sede. </p>
                         <div id="spazioSinistra"><h2> Introduzione alle funzionalità del sistema</h2></div>
                         <p id="spazioTsDx">   L'utente inseriva il prodotto ricercato e la città in cui era interessato a trovare i fornitori, e gli viene presentata un'interfaccia dove sono elencati gli articoli situati nella città, provincia indicata. L'idea di progetto prevedeva una campagna di comunicazione attivata dai comuni per richiedere ai fornitori di partecipare e inserire gli articoli a fine informativo. Anche le imprese contribuiscono a responsabilizzare i fornitori circa l'inserimento sulla piattaforma dei prodotti disponibili. 
                            I fornitori possono inserire le informazioni sulla propria attività e gli articoli prodotti e posseduti in magazzino. 
@@ -511,7 +503,12 @@
                      <img src="image/appi/Immagine4.JPG"class="img"/>
                   </div>
 
-               
+                  <a href="#AppiCaseStudy">
+                        <div class="icona_chiusura" onClick="hide()">
+                           <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/FFFFFF/up.png" alt="up"/>
+                        </div>
+                  </a>
+
                </div>
          
 
@@ -522,7 +519,7 @@
       <div class="moreInfo" id="moreInfo2" > <a name="seoWordpress"> </br> </a>
          <div id="spazioVuotoAmpio"> </div>
          
-         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+         <div class="title">
             <h3>Analisi SEO del sito Place marketing</h3>
          </div>
                <div class="icona_chiusura" onClick="hide2()">
@@ -578,7 +575,7 @@
       <div class="contenuto moreInfo" id="moreInfo3" > <a name="ProgettazioneDb"> </br> </a>
          <div id="spazioVuotoAmpio"> </div>
   
-         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+         <div class="title">
             <h3>Progettazione e realizzazione di un database con MySQL</h3>
          </div>
                <div class="icona_chiusura" onClick="hide3()">
@@ -643,7 +640,7 @@
       <div class="contenuto moreInfo" id="moreInfo4"> <a name="interactionDesign"> </br> </a>
          <div class="spazioVuotoAmpio" style="padding: 5%"> </div>
 
-         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+         <div class="title">
              <h3>Alcuni progetti svolti per un esame di interaction design</h3>
          </div>
                <div class="icona_chiusura" onClick="hide4()">
@@ -669,7 +666,7 @@
                   <div class="box singolo verdePetrolio"> 
                      <p class="testoMIPrincipale">
                            Questo progetto è fatto al fine di mostrare le aree del sito. Siccome il progetto era basata sull'idea di controllo manuale a distanza(con gesti delle mani), non segue le regole convenzionali di movimento all'interno del sito. Per muoversi nella simulazione sottostante è sufficiente usare la barra spaziatrice o le freccette.   
-                           <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F77BBEmZ5RpOFl3OhEGeY90%2FUntitled%3Ftype%3Ddesign%26node-id%3D303-243%26t%3DYMILMR7Qk12e09Jf-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D466%253A398%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe>
+                         <!--  <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="1000" height="600" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F77BBEmZ5RpOFl3OhEGeY90%2FUntitled%3Ftype%3Ddesign%26node-id%3D303-243%26t%3DYMILMR7Qk12e09Jf-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D466%253A398%26show-proto-sidebar%3D1%26mode%3Ddesign" allowfullscreen></iframe> -->
                         </p>
                   </div>
                   
@@ -713,58 +710,59 @@
       <div class="contenuto moreInfo" id="moreInfo5"> <a name="miraChallenge"> </a>
          <div id="spazioVuotoAmpio"> </div>
 
-         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+         <div class="title">
            <h3>Contenuti grafici creati all'interno del progetto 'MiraChallenge'</h3>
          </div>
                <div class="icona_chiusura" onClick="hide5()">
                <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
                <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
                </div>
-               <div class="containerMagInfo"> 
-
-                     <p class="testoMIPrincipale">
-                        <strong> Mirachallenge è un progetto di Giovani a Mirafiori</strong>, nato con l'idea di rigenerare spazi cittadini e portare eventi di intrattenimento, cultura e sport. All'interno del team "spazi rigenerati", ho realizzato i contenuti comunicative sia cartacei sia online per la pagine Instagram.<br>
-                        Creazione di contenuti con <strong>Canva e/o Photoshop</strong>.
-                     </p>
-                   
+               <div class="containerMagInfo">
+                  <div class="box singolo bianco">
                   
-                  <div style="position: relative; width: 92%; color:rgb(142, 128, 104);">
-                     <h3> Contenuti social per presentare un Contest Fotografico </h3>
+                        <p class="testoMIPrincipale">
+                           <strong> Mirachallenge è un progetto di Giovani a Mirafiori</strong>, nato con l'idea di rigenerare spazi cittadini e portare eventi di intrattenimento, cultura e sport. All'interno del team "spazi rigenerati", ho realizzato i contenuti comunicative sia cartacei sia online per la pagine Instagram.<br>
+                           Creazione di contenuti con <strong>Canva e/o Photoshop</strong>.
+                        </p>
+                     
+                     
+                     <div style="position: relative; width: 92%; color:rgb(142, 128, 104);">
+                        <h3> Contenuti social per presentare un Contest Fotografico </h3>
+                     </div>
+
+                     <p class="testoMIPrincipale"><strong>Cartoline cartacee</strong><br>
+                        <img src="image/grafica/mirachallenge/1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                        <img src="image/grafica/mirachallenge/2.png"class="img" style="width: 48%;"/> 
+                     </p>
+
+                     <p class="testoMIPrincipale"><strong>Carosello per instagram</strong><br>
+                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto.png"class="img" style="float:left; width: 23%;margin-right: 1%;"/> 
+                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2.png"class="img" style="width: 23%;margin-right: 1%;"/> 
+                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (2).png"class="img" style="width: 23%;margin-right: 1%;"/> 
+                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (3).png"class="img" style="width: 23%;margin-right: 1%;"/> 
+
+                     </p>
+
+                     <p class="testoMIPrincipale"><strong>Post instagram per le iniziative "caccia al tesolo" e "Laboratorio natalizio" realizzate per i bambini del quartiere</strong><br>
+                        <img src="image/grafica/mirachallenge/mirafiori1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                        <img src="image/grafica/mirachallenge/Mirafiori2.png"class="img" style="width: 48%;"/> 
+                     </p>
+
+                     <p class="testoMIPrincipale"><strong>Carosello legato alla caccia al tesoro</strong><br>
+                        <img src="image/grafica/mirachallenge/mirafiori3.jpeg"class="img" style="float:left; width: 31%;margin-right: 1%;"/> 
+                        <img src="image/grafica/mirachallenge/Mirafiori4.jpeg"class="img" style="width: 31%;margin-right: 1%;"/> 
+                        <img src="image/grafica/mirachallenge/Mirafiori5.jpeg"class="img" style="width: 31%;margin-right: 1%;"/> 
+
+                     </p>
+
+                     <p class="testoMIPrincipale"><strong>Post instagram e formato volantino cartaceo per l'incontro legato alla creazione di un murales nel quartiere </strong><br>
+                        <img src="image/grafica/mirachallenge/Miraflowers_volantino_murale.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                        <img src="image/grafica/mirachallenge/Miraflowers_post_ig.png"class="img" style="width: 48%;"/> 
+                        <img src="image/grafica/mirachallenge/murales.jpeg"class="img"/>                    
+                        Il murales realizzato presso gli Orti Generali 
+                     </p>
                   </div>
-
-                  <p class="testoMIPrincipale"><strong>Cartoline cartacee</strong><br>
-                     <img src="image/grafica/mirachallenge/1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                     <img src="image/grafica/mirachallenge/2.png"class="img" style="width: 48%;"/> 
-                  </p>
-
-                  <p class="testoMIPrincipale"><strong>Carosello per instagram</strong><br>
-                     <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto.png"class="img" style="float:left; width: 23%;margin-right: 1%;"/> 
-                     <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2.png"class="img" style="width: 23%;margin-right: 1%;"/> 
-                     <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (2).png"class="img" style="width: 23%;margin-right: 1%;"/> 
-                     <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (3).png"class="img" style="width: 23%;margin-right: 1%;"/> 
-
-                  </p>
-
-                  <p class="testoMIPrincipale"><strong>Post instagram per le iniziative "caccia al tesolo" e "Laboratorio natalizio" realizzate per i bambini del quartiere</strong><br>
-                     <img src="image/grafica/mirachallenge/mirafiori1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                     <img src="image/grafica/mirachallenge/Mirafiori2.png"class="img" style="width: 48%;"/> 
-                  </p>
-
-                  <p class="testoMIPrincipale"><strong>Carosello legato alla caccia al tesoro</strong><br>
-                     <img src="image/grafica/mirachallenge/mirafiori3.jpeg"class="img" style="float:left; width: 31%;margin-right: 1%;"/> 
-                     <img src="image/grafica/mirachallenge/Mirafiori4.jpeg"class="img" style="width: 31%;margin-right: 1%;"/> 
-                     <img src="image/grafica/mirachallenge/Mirafiori5.jpeg"class="img" style="width: 31%;margin-right: 1%;"/> 
-
-                  </p>
-
-                  <p class="testoMIPrincipale"><strong>Post instagram e formato volantino cartaceo per l'incontro legato alla creazione di un murales nel quartiere </strong><br>
-                     <img src="image/grafica/mirachallenge/Miraflowers_volantino_murale.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                     <img src="image/grafica/mirachallenge/Miraflowers_post_ig.png"class="img" style="width: 48%;"/> 
-                     <img src="image/grafica/mirachallenge/murales.jpeg"class="img"/>                    
-                     Il murales realizzato presso gli Orti Generali 
-                  </p>
                </div>
-
       </div>
   
       <!--QUi inizia il div contenente l'approfondimento della sesta iniziativa-->
@@ -772,7 +770,7 @@
          <div id="spazioVuotoAmpio"> </div>
 
 
-         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+         <div class="title">
             <h3>Contenuti grafici creati per l'associazione "Amici del Modellismo"</h3>
          </div>
                <div class="icona_chiusura" onClick="hide6()">
@@ -780,28 +778,29 @@
                <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
                </div>
                <div class="containerMagInfo">                    
-                  
-                  <div style="position: relative; width: 92%; color:rgb(142, 128, 104);">
-                     <h3> Volantini legati agli eventi </h3>
-                  </div>
+                  <div class="box singolo bianco">
 
-                  <p class="testoMIPrincipale">
-                     <img src="image/grafica/Lego/brickfestborgate.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                     <img src="image/grafica/Lego/attacca e stacca.png"class="img" style="width: 48%;"/> 
-                  </p>
+                        <div style="position: relative; width: 92%; color:rgb(142, 128, 104);">
+                           <h3> Volantini legati agli eventi </h3>
+                        </div>
 
-                  <p class="testoMIPrincipale">Realizzazione di una <strong>copertina adesiva da applicare ai mattoncini</strong> come oggetto identitario, distribuito ai 30 espositori. <br>
-                     <img src="image/grafica/Lego/2022.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                     <img src="image/grafica/Lego/mattoncino.jpeg"class="img" style="width: 48%;"/> 
-                  </p>
+                        <p class="testoMIPrincipale">
+                           <img src="image/grafica/Lego/brickfestborgate.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                           <img src="image/grafica/Lego/attacca e stacca.png"class="img" style="width: 48%;"/> 
+                        </p>
 
-                  <p class="testoMIPrincipale"><strong>Realizzazione volantino pieghevole</strong> per l'evento GrugliascoFest "Mattoncini in festa", il volantino è nato con lo scopo di rispondere all'esigenza delle realtà imprenditoriali sponsor dell'iniziativa. <br>
-                     <img src="image/grafica/Lego/1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                     <img src="image/grafica/Lego/2.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/>
-                  Fronte e Retro del volantino
-                  </p>
+                        <p class="testoMIPrincipale">Realizzazione di una <strong>copertina adesiva da applicare ai mattoncini</strong> come oggetto identitario, distribuito ai 30 espositori. <br>
+                           <img src="image/grafica/Lego/2022.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                           <img src="image/grafica/Lego/mattoncino.jpeg"class="img" style="width: 48%;"/> 
+                        </p>
 
+                        <p class="testoMIPrincipale"><strong>Realizzazione volantino pieghevole</strong> per l'evento GrugliascoFest "Mattoncini in festa", il volantino è nato con lo scopo di rispondere all'esigenza delle realtà imprenditoriali sponsor dell'iniziativa. <br>
+                           <img src="image/grafica/Lego/1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
+                           <img src="image/grafica/Lego/2.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/>
+                        Fronte e Retro del volantino
+                        </p>
 
+                   </div>
                </div>
 
       </div>
@@ -812,7 +811,7 @@
          <div id="spazioVuotoAmpio"> </div>
 
 
-         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+         <div class="title">
                <h3> Realizzazione di una nuova immagine per la Casa della Trota </h3>
          </div>
                <div class="icona_chiusura" onClick="hide7()">
@@ -847,10 +846,10 @@
          <div id="spazioVuotoAmpio"> </div>
 
 
-         <div style="position: relative; float: left; width: 92%; color:rgb(142, 128, 104);">
+         <div class="title" >
                <h3> Miglioramento presenza online di un Hotel </h3>
          </div>
-               <div class="icona_chiusura" onClick="hide7()">
+               <div class="icona_chiusura" onClick="hide8()">
                <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
                <img width="50" height="50" class="chiusuraDiv" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
                </div>
@@ -915,41 +914,6 @@
          </script>
 </body> 
 
- <script type="module">
-        import { particlesCursor } from 'https://unpkg.com/threejs-toys@0.0.8/build/threejs-toys.module.cdn.min.js'
-
-    const punt = particlesCursor({
-      el: document.getElementById('punt'),
-      gpgpuSize: 512,
-      colors: [0x000000, 0x111111],
-      color: 0x000000,
-      coordScale: 0.5,
-      noiseIntensity: 0.0015,
-      noiseTimeCoef: 0.01,
-      pointSize: 4,
-      pointDecay: 0.005,
-      sleepRadiusX: 10,
-      sleepRadiusY: 10,
-      sleepTimeCoefX: 0.0015,
-      sleepTimeCoefY: 0.0015,
-    });
-
-    // Aggiungiamo una funzione di "attesa" per il completamento del rendering
-    const checkRendererReady = () => {
-      if (punt && punt.renderer) {
-        // Appena il renderer è pronto, forziamo il colore dello sfondo
-        punt.renderer.setClearColor(0xf9f5f9, 1);  // Sfondo chiaro
-        punt.renderer.setClearAlpha(1);             // Opaco, nessuna trasparenza
-        console.log('✔ Sfondo impostato correttamente');
-      } else {
-        // Se il renderer non è pronto, aspettiamo un altro ciclo di render
-        requestAnimationFrame(checkRendererReady);
-      }
-    };
-
-    // Avvia il controllo asincrono
-    checkRendererReady();
-  </script>
 
 </html>
 
