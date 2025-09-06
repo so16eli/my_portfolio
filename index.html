@@ -79,13 +79,13 @@
             
          
          <nav class="nav">
-         
-            <a href="#progetto" class="nav-link active" onclick="showSection('home'); hideAll();">Tutto</a>
-            <a href="#progetto" class="nav-link active" onclick="showSection('Wordpress')">SEO e Wordpress</a>
-            <a href="#progetto" class="nav-link" onclick="showSection('DB')">Progettazione DB</a>
-            <a href="#progetto" class="nav-link" onclick="showSection('Design')">Design</a>
-            <a href="#progetto" class="nav-link" onclick="showSection('Grafica')">Grafica</a>
-
+            <div class="nav2">
+                  <a href="#progetto" class="nav-link active" onclick="showSection('home'); hideAll();">Vedi tutto</a>
+                  <a href="#progetto" class="nav-link active" onclick="showSection('Wordpress')">SEO e Wordpress</a>
+                  <a href="#progetto" class="nav-link" onclick="showSection('DB')">Progettazione Database</a>
+                  <a href="#progetto" class="nav-link" onclick="showSection('Design')">Design</a>
+                  <a href="#progetto" class="nav-link" onclick="showSection('Grafica')">Grafica</a>
+            </div>
          </nav>
      
             
@@ -159,7 +159,7 @@
 
                   <div class="contenuti" >  
                         <h2 onClick="show2()"><span class="categoriaFont">Case study 2 </span><span class="parolaChiaveTitolo"> Place Marketing</span> <br>Marketing territoriale </h2>
-                        <p style="padding-bottom: 8%;">Un sito realizzato in Wordpress. Analisi keyword per la SEO. L'obiettivo era raccontare le modalità di applicazione del marketing al territorio.</p>
+                        <p id="tsBreve" style="padding-bottom: 8%;">Un sito realizzato in Wordpress. Analisi keyword per la SEO. L'obiettivo era raccontare le modalità di applicazione del marketing al territorio.</p>
                   </div>    <div class="icona_more" onClick="show2()">
                         <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
                         <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
@@ -177,7 +177,7 @@
                      <div class="contenuti" >  
                            <span class="categoriaFont">Case study 1 </span><span class="parolaChiaveTitolo"> APPI</span> 
                            <h2 onClick="show()">It's so nice to be healthy </h2>
-                           <p style="padding-bottom: 8%;">Progettazione e implementazione di un sito di fornitura di materiali per la protezione della salute durante l'emergenza Covid-19</p>
+                           <p id="tsBreve" style="padding-bottom: 8%;">Progettazione e implementazione di un sito di fornitura di materiali per la protezione della salute durante l'emergenza Covid-19</p>
                      </div>
 
                      <div class="icona_more" onClick="show()">
@@ -186,8 +186,6 @@
                      </div>  
                         
                   </div>
-
-
 
                <!--QUi inizia il div contenente la terza iniziativa-->
                <div class="container">
@@ -199,16 +197,13 @@
                <div class="contenuti" >  
                      <span class="categoriaFont">Case study 3 </span><span class="parolaChiaveTitolo"> Progettazione database per il sito di un Ristorante</span> 
                      <h2 onClick="show3()">Utilizzo di Modelli concettuali e logici</h2>
-                     <p style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
+                     <p id="tsBreve" style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
                </div>    <div class="icona_more" onClick="show3()">
                      <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
                      <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
                   </div>  
                   
-               </div>
-
-         
-                  
+               </div>                  
             
                <!--QUi inizia il div contenente la quarta iniziativa-->
                <div class="container">
@@ -284,7 +279,7 @@
                      <div class="contenuti" >  
                            <span class="categoriaFont">Case study 2 </span><span class="parolaChiaveTitolo"> Place Marketing</span> 
                            <h2 onClick="show2()">Marketing territoriale </h2>
-                           <p style="padding-bottom: 8%;">Un sito realizzato in Wordpress. Analisi keyword per la SEO. L'obiettivo era raccontare le modalità di applicazione del marketing al territorio.</p>
+                           <p id="tsBreve" style="padding-bottom: 8%;">Un sito realizzato in Wordpress. Analisi keyword per la SEO. L'obiettivo era raccontare le modalità di applicazione del marketing al territorio.</p>
                      </div>    
                      <div class="icona_more" onClick="show2()">
                         <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
@@ -308,7 +303,7 @@
                   <div class="contenuti" >  
                         <span class="categoriaFont">Case study 3 </span><span class="parolaChiaveTitolo"> Progettazione database per il sito di un Ristorante</span> 
                         <h2 onClick="show3()">Utilizzo di Modelli concettuali e logici</h2>
-                        <p style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
+                        <p id="tsBreve" style="padding-bottom: 8%;">Progettazione del database per la gestione delle ordinazioni di un ristorante. </p>
                   </div>    <div class="icona_more" onClick="show3()">
                         <img src="https://img.icons8.com/glyph-neue/54/e2b963/connection-status-off.png" alt="connection-status-off"/> 
                         <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
@@ -423,7 +418,8 @@
                   <img class="immagineallhover" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAADPklEQVR4nO2azWsTURDA96T1oCio9aZHD3pqb3oURVDspaDtIeZNKHoI1e6MsaecNR4sFURQQt7b9NCjtqj/QRHPtk178pOKerZaqszWxIbsJnm7b7OP0oGBQLvvzS8z83ZmXhxnV3ao3KzePSQkDYGiklA4DxKXhMQfIHGdlT8LSYv+3xSVchW8kimPH3RskPxUfq+QNAqSXoOkDVD0R0slbQhFL8HDEV7L6bUMz97eJxROgMRP2saH68eswluZcrGvJxBZz70oFK0aBGhSoXAlV7lzIdkwUjSVFECromTPG4WAmcl+Ielt7yBoyzuS3tyQ7lEjEJly4QS7u9cQ0DgQsMY2xILIPps8wsdoahCqnje0minjsYieKPalEU7QJswiHdGg8HHaxkOLZ3Ba+4hN22gIhzmvc8wuWwyy0tVL039jW2AwtIWh8Y7e4FLBehCJH9omvl8AWmAodKE5RddCQfwq1gIjoavwwvnQfiJSKZ5eeP0eVfkDQWE1ZIOBoBNeHl0KAMEHaRsGuirxflB+zGkt4uEZUaFBoWgtdpgoWstV3YFspXBWM7xeBIBgTcutVXdgy5PuqTgw/Cyv4a9VoUFNjywF5ch3PSPw63WvcJqfHatOnBSSPuuDNK8Bir7oPh/kkfW4hujBxIUg9uZPQyBRYeJDQBiIfmhFhTEDAWGhFbfibUrakAOgm/8BnT0lLQaA+BPAyIt29oxJT1D9i3nemiOKSvFBgr91056A/3vdawHhWayJxQNhEoCAsBKFB8omi8btMElACEW/AovGf3nyytRGDRguYwyVMrBdJc0FQvh54uGI0c0SVCHdqzui1R2eLe5x2gmP9q0HUZhvC9HwigVjUghTibWuJ458P2EnBG1mK3jO0RGh6JGF3nioBVEPMR4cp268auhCxwQPk7HqxGEb8kXwVd/MZL8TR/iSRbcNNgyxLDz3uGNC+PorpTBb4MsmJ5HLUEmbvfEEPkn07p3vJxINNYlL2kdsTO+Mc6lgDoDe8xs7lV9A8KY8Fefukmex2uHDz0ia4wIw8tFqWrg3AOle5jEmTwC5nwaF3+o/quHPQuE7bk+5s+OmSDyl/cYN2RXHDvkLBo8puVPXHDcAAAAASUVORK5CYII=">
                </div>  
                
-            </div>-->
+         </div>
+      -->
  
             
       </div>
@@ -459,8 +455,8 @@
 
                   
                   <div class="box divisione verdePetrolio">
-                     <p class="testoSx">
-                     La <strong>descrizione del sistema informativo</strong>, <br>riportante gli <strong>attori</strong> e le loro <strong>azioni</strong>.
+                     <p id="spazioTsDx">
+                     La <strong>descrizione del sistema informativo,</strong> riportante gli <strong>attori</strong> e le loro <strong>azioni.</strong>
                      </p>
                      <p class="imgDestra">
                      <img src="image/appi/Immagine5.png"class="img"/> 
@@ -481,7 +477,7 @@
                
 
                   <div class="box singolo bianco" style="width: 89%;">
-                     <p class="testoMISecondario"><strong>Implementazione sito:</strong> Pagina index, homepage, mostra una spiegazione di che cos’è APPI e una barra di ricerca. Mostra inoltre un link in altro a destra dove è possibile trovare di cosa necessitano le imprese per ripartire.</p>
+                     <p class="testoMISecondario"><strong>Implementazione sito:</strong> Pagina index, homepage, mostra una spiegazione di che cos'è APPI e una barra di ricerca. Mostra inoltre un link in altro a destra dove è possibile trovare di cosa necessitano le imprese per ripartire.</p>
                      <img src="image/appi/Immagine1.JPG"class="imgMagInfo"/>
                   </div>
 
@@ -503,13 +499,24 @@
                      <img src="image/appi/Immagine4.JPG"class="img"/>
                   </div>
 
-                  <a href="#AppiCaseStudy">
-                        <div class="icona_chiusura" onClick="hide()">
-                           <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/FFFFFF/up.png" alt="up"/>
-                        </div>
-                  </a>
+                 
+                 
+                  
 
-               </div>
+                  <a href="#AppiCaseStudy">
+                     <div class="icona_chiusura">
+                           <img width="30" height="30" src="https://img.icons8.com/material-outlined/24/4D4D4D/collapse-arrow.png" alt="collapse-arrow"/>
+                     </div>
+                  </a>
+                  
+                  <div class="spazioSXVuoto">
+                        Torna su o chiudi la sezione
+                  </div>
+
+                  <div class="icona_chiusura" onClick="hide()">
+                     <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+                     </div>
+                  </div>
          
 
       
@@ -530,11 +537,12 @@
                   <div class="containerMagInfo">
                  
                      <div class="box singolo bianco">
-                      <p>Realizzazione di un sito all'interno di un corso universitario di web writing e miglioramento dell'indicizzazione sui motori di ricerca. Il sito è attualmente reperibile online all'indirizzo <a href="https://placemarketing.altervista.org" class="linkMoreInfo">placemarketing.altervista.org</a>, e ha l'obiettivo di raccontare attraverso articoli le modalità di applicazione del marketing al territorio. Il sito è realizzato in Wordpress, con l'utilizzo dei plug-in Elementor, gestore di file WP, Yoast SEO. All'interno della sezione Blog tutti gli articoli sono stati indicizzati tramite le pratiche suggerite da SeoYoast e il controllo della presenza online tramite Google Search Console.</p></div>
+                      <p class="testoMISecondario">Realizzazione di un sito all'interno di un corso universitario di web writing e miglioramento dell'indicizzazione sui motori di ricerca. Il sito è attualmente reperibile online all'indirizzo <a href="https://placemarketing.altervista.org" class="linkMoreInfo">placemarketing.altervista.org</a>, e ha l'obiettivo di raccontare attraverso articoli le modalità di applicazione del marketing al territorio. Il sito è realizzato in Wordpress, con l'utilizzo dei plug-in Elementor, gestore di file WP, Yoast SEO. All'interno della sezione Blog tutti gli articoli sono stati indicizzati tramite le pratiche suggerite da SeoYoast e il controllo della presenza online tramite Google Search Console.</p></div>
                       <div class="box divisione bianco">
                       <div id="spazioIntroSx">
                         <h2>Comprendere il linguaggio a partire dal target</h2>
-                        <p> Innanzitutto, si è cercato di <strong>determinare il target</strong>: un gruppo di appassionati di marketing che voglia approfondire la promozione dei territori. Per cui per quanto vario, si tratta di un target istruito, attento alle sfere sociali e culturali, che si aspetta un linguaggio semplice e informale ma che utilizzi liberamente termine tecnici. Un target che si aspetta il rispetto della propria figura, con un supporto serio e concreto, poiché nel momento in cui effettua la ricerca si sta, probabilmente, approcciando a un progetto complesso e responsabilizzante e necessità di procedure e casi studio.
+                        
+                        <p class="testoMISecondario"> Innanzitutto, si è cercato di <strong>determinare il target</strong>: un gruppo di appassionati di marketing che voglia approfondire la promozione dei territori. Per cui per quanto vario, si tratta di un target istruito, attento alle sfere sociali e culturali, che si aspetta un linguaggio semplice e informale ma che utilizzi liberamente termine tecnici. Un target che si aspetta il rispetto della propria figura, con un supporto serio e concreto, poiché nel momento in cui effettua la ricerca si sta, probabilmente, approcciando a un progetto complesso e responsabilizzante e necessità di procedure e casi studio.
                         </div>
                         <div id="spazioSinistra"> <h2>Indice di Gulpease</h2> </div>
                         <p id="spazioTsDx"> è stato dunque misurato lo strumento dell'Indice di Gulpease che ha rivelato testi complessi da leggere per un pubblico con licenza elementare o media, ma considetato che il target raggiunto potrebbe avere un livello di conoscenze elevato, il linguaggio dovrebbe essere  adeguato..
@@ -543,7 +551,7 @@
                      </div> 
    
                      <div class="box singolo verdePetrolio">
-                        <p class="testoMIPrincipale" style="text-align: center;"><strong>Creazione della sitemap</strong>, la definizione e descrizione delle pagine, e le <strong>parole chiave</strong> stabilite <strong>per ciascuna pagina</strong>.<img src="image/MarketingTerritoriale/ImmaginePM2.JPG"class="img"/> 
+                        <p class="testoMIPrincipale" style="text-align: center;"><strong>Creazione della sitemap</strong>, la definizione e descrizione delle pagine, e le <strong>parole chiave</strong> stabilite <strong>per ciascuna pagina.</strong><img src="image/MarketingTerritoriale/ImmaginePM2.JPG"class="img"/> 
                            </p>
                         </div>      
 
@@ -562,7 +570,20 @@
                         <img src="image/MarketingTerritoriale/homepagePM.png"class="img"/> 
                      </p>
                      </div>
+<a href="#AppiCaseStudy">
+                     <div class="icona_chiusura">
+                           <img width="30" height="30" src="https://img.icons8.com/material-outlined/24/4D4D4D/collapse-arrow.png" alt="collapse-arrow"/>
+                     </div>
+                  </a>
+                  
+                  <div class="spazioSXVuoto">
+                        Torna su o chiudi la sezione
+                  </div>
 
+                  <div class="icona_chiusura" onClick="hide()">
+                     <img width="50" height="50"  src="https://img.icons8.com/ios-filled/100/1A1A1A/cancel.png" alt="open-pane"/> 
+                     </div>
+                  </div>
 
                   </div>
 
@@ -720,46 +741,44 @@
                <div class="containerMagInfo">
                   <div class="box singolo bianco">
                   
-                        <p class="testoMIPrincipale">
+                        <p class="testoMISecondario">
                            <strong> Mirachallenge è un progetto di Giovani a Mirafiori</strong>, nato con l'idea di rigenerare spazi cittadini e portare eventi di intrattenimento, cultura e sport. All'interno del team "spazi rigenerati", ho realizzato i contenuti comunicative sia cartacei sia online per la pagine Instagram.<br>
                            Creazione di contenuti con <strong>Canva e/o Photoshop</strong>.
                         </p>
                      
                      
-                     <div style="position: relative; width: 92%; color:rgb(142, 128, 104);">
-                        <h3> Contenuti social per presentare un Contest Fotografico </h3>
-                     </div>
+                        <h3 style="color: #2f3732;"> Contenuti social per presentare un Contest Fotografico </h3>
 
                      <p class="testoMIPrincipale"><strong>Cartoline cartacee</strong><br>
-                        <img src="image/grafica/mirachallenge/1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                        <img src="image/grafica/mirachallenge/2.png"class="img" style="width: 48%;"/> 
+                        <img src="image/grafica/mirachallenge/1.png"class="img distrOrizzontale" style="float: none !important;"/> 
+                        <img src="image/grafica/mirachallenge/2.png"class="img distrOrizzontale" style="float: none !important;" /> 
                      </p>
 
                      <p class="testoMIPrincipale"><strong>Carosello per instagram</strong><br>
-                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto.png"class="img" style="float:left; width: 23%;margin-right: 1%;"/> 
-                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2.png"class="img" style="width: 23%;margin-right: 1%;"/> 
-                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (2).png"class="img" style="width: 23%;margin-right: 1%;"/> 
-                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (3).png"class="img" style="width: 23%;margin-right: 1%;"/> 
+                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto.png"class="img distrOrizzontale"/> 
+                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2.png"class="img distrOrizzontale"/> 
+                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (2).png"class="img distrOrizzontale" style="float: none !important;"/> 
+                        <img src="image/grafica/mirachallenge/carosello mirafiori/carosellofoto2 (3).png"class="img distrOrizzontale" style="float: none !important;"/> 
 
                      </p>
 
-                     <p class="testoMIPrincipale"><strong>Post instagram per le iniziative "caccia al tesolo" e "Laboratorio natalizio" realizzate per i bambini del quartiere</strong><br>
-                        <img src="image/grafica/mirachallenge/mirafiori1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                        <img src="image/grafica/mirachallenge/Mirafiori2.png"class="img" style="width: 48%;"/> 
+                     <p class="testoMIPrincipale"><strong>Grafica formato per post instagram per le iniziative "caccia al tesoro"</strong> e <strong>"Laboratorio natalizio"</strong> realizzate per i bambini del quartiere<br>
+                        <img src="image/grafica/mirachallenge/mirafiori1.png"class="img distrOrizzontale"/> 
+                        <img src="image/grafica/mirachallenge/Mirafiori2.png"class="img distrOrizzontale" style="float: none !important;"/> 
                      </p>
 
-                     <p class="testoMIPrincipale"><strong>Carosello legato alla caccia al tesoro</strong><br>
-                        <img src="image/grafica/mirachallenge/mirafiori3.jpeg"class="img" style="float:left; width: 31%;margin-right: 1%;"/> 
-                        <img src="image/grafica/mirachallenge/Mirafiori4.jpeg"class="img" style="width: 31%;margin-right: 1%;"/> 
-                        <img src="image/grafica/mirachallenge/Mirafiori5.jpeg"class="img" style="width: 31%;margin-right: 1%;"/> 
+                     <p class="testoMIPrincipale"><strong>Carosello legato alla caccia al tesoro</strong>
+                        <img src="image/grafica/mirachallenge/mirafiori3.jpeg"class="img distrOrizzontale" /> 
+                        <img src="image/grafica/mirachallenge/Mirafiori4.jpeg"class="img distrOrizzontale" /> 
+                        <img src="image/grafica/mirachallenge/Mirafiori5.jpeg"class="img distrOrizzontale" style="float: none !important;"/> 
 
                      </p>
 
-                     <p class="testoMIPrincipale"><strong>Post instagram e formato volantino cartaceo per l'incontro legato alla creazione di un murales nel quartiere </strong><br>
-                        <img src="image/grafica/mirachallenge/Miraflowers_volantino_murale.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                        <img src="image/grafica/mirachallenge/Miraflowers_post_ig.png"class="img" style="width: 48%;"/> 
-                        <img src="image/grafica/mirachallenge/murales.jpeg"class="img"/>                    
-                        Il murales realizzato presso gli Orti Generali 
+                     <p class="testoMISecondario"><strong>Post instagram e formato volantino cartaceo</strong> per l'incontro legato alla creazione di un murales nel quartiere <br>
+                        <img src="image/grafica/mirachallenge/Miraflowers_volantino_murale.png"class="img distrOrizzontale"/> 
+                        <img src="image/grafica/mirachallenge/Miraflowers_post_ig.png"class="img distrOrizzontale" style="float: none !important;"/> 
+                        <img src="image/grafica/mirachallenge/murales.jpeg"class="img distrOrizzontale" style="float: none !important;"/>                    
+                     </br>Il murales realizzato presso gli Orti Generali 
                      </p>
                   </div>
                </div>
@@ -780,23 +799,23 @@
                <div class="containerMagInfo">                    
                   <div class="box singolo bianco">
 
-                        <div style="position: relative; width: 92%; color:rgb(142, 128, 104);">
-                           <h3> Volantini legati agli eventi </h3>
-                        </div>
+                           <h3 style="color: #2f3732;"> Volantini legati agli eventi </h3>
 
                         <p class="testoMIPrincipale">
-                           <img src="image/grafica/Lego/brickfestborgate.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                           <img src="image/grafica/Lego/attacca e stacca.png"class="img" style="width: 48%;"/> 
+                           <img src="image/grafica/Lego/brickfestborgate.png"class="img distrOrizzontale"/> 
+                           <img src="image/grafica/Lego/attacca e stacca.png"class="img distrOrizzontale" style="float:none !important;"/> 
                         </p>
 
-                        <p class="testoMIPrincipale">Realizzazione di una <strong>copertina adesiva da applicare ai mattoncini</strong> come oggetto identitario, distribuito ai 30 espositori. <br>
-                           <img src="image/grafica/Lego/2022.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                           <img src="image/grafica/Lego/mattoncino.jpeg"class="img" style="width: 48%;"/> 
+                        <p class="testoMISecondario">Realizzazione di una <strong>copertina adesiva da applicare ai mattoncini</strong> come oggetto identitario, distribuito ai 30 espositori. <br>
+                           <img src="image/grafica/Lego/2022.png"class="img distrOrizzontale"/> 
+                           <img src="image/grafica/Lego/mattoncino.jpeg"class="img distrOrizzontale" style="float: none !important;"/> 
                         </p>
 
-                        <p class="testoMIPrincipale"><strong>Realizzazione volantino pieghevole</strong> per l'evento GrugliascoFest "Mattoncini in festa", il volantino è nato con lo scopo di rispondere all'esigenza delle realtà imprenditoriali sponsor dell'iniziativa. <br>
-                           <img src="image/grafica/Lego/1.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/> 
-                           <img src="image/grafica/Lego/2.png"class="img" style="float:left; width: 48%;margin-right: 1%;"/>
+                        <p class="testoMISecondario"><strong>Realizzazione volantino pieghevole</strong> per l'evento GrugliascoFest "Mattoncini in festa", il volantino è nato con lo scopo di rispondere all'esigenza delle realtà imprenditoriali sponsor dell'iniziativa. <br>
+                           <img src="image/grafica/Lego/1.png"class="img distrOrizzontale"/> 
+                           <img src="image/grafica/Lego/2.png"class="img distrOrizzontale" style="float:none !important;"/>
+                        </p>
+                        <p class="testoMISecondario">
                         Fronte e Retro del volantino
                         </p>
 
@@ -857,9 +876,9 @@
                   
               
                   <div class="box singolo bianco">
-                     <p class="testoMISecondario"> Pratiche di digital marketing per aiutare gli hotel nel sottile equilibrio tra OTA e prenotazione diretta agli Hotel. Disintermediare gli Hotel da OTA e agenzie di viaggio tramite i Booking Engine e offerte di cross-selling.
+                     <p class="testoMISecondario"> Pratiche di digital marketing per aiutare gli hotel nel sottile equilibrio tra OTA e prenotazione diretta agli Hotel. Disintermediare gli Hotel da OTA e agenzie di viaggio tramite i Booking Engine e offerte di cross-selling. </p>
 
-                        <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/1.png"class="img"/>
+                     <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/1.png"class="img"/>
                         <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/2.png"class="img"/> 
                         <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/3.png"class="img"/> 
                         <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/4.png"class="img"/> 
@@ -877,7 +896,7 @@
                         <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/16.png"class="img"/> 
                         <img src="image/MarketingTerritoriale/Hotel_Marina_di_Viverone/17.png"class="img"/> 
 
-                     </p>
+                    
                   </div>
 
                  

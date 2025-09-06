@@ -21,6 +21,16 @@ body{
     
 }
 
+.spazioSXVuoto {
+    position: relative; 
+    float: left; 
+    width: 92%; 
+    color:rgb(142, 128, 104);
+    min-height: fit-content;
+    text-align: center;
+
+}
+
 .title h3{
     margin-left: 10%;
     text-align: left;
@@ -138,18 +148,26 @@ html::-webkit-scrollbar-thumb{
 
 /*creazione della nav con gli argomenti di cui so qualcosa*/
 .nav{
+    width: 100%;
     position: fixed;
     bottom: 0 !important;
-    width: 100%;
     height: 10%;
-    display:flex;
     overflow-x: auto;
-    justify-content: center;
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
     background-color: #1C1018;
     z-index: 1 !important;
+}
 
+.nav2 {
+    display:flex;
+    justify-content: center;
+    opacity: 0.6;
+    height: 9%;
+}
+
+.nav2:hover {
+    opacity: 1;
 }
 
 .fixed {
@@ -166,12 +184,22 @@ html::-webkit-scrollbar-thumb{
 
 .nav-link {
     padding: 2% 5%;
+    font-weight: 200;
+    font-family: 'Kanit', sans-serif;
 }
 
 .nav-link:hover {
     background-color: white;
     color: black;
+    font-weight: 200;
+    opacity: 0.9;
+}
+
+.nav-link:focus {
+    background-color: rgba(214, 180, 105, 1);
+    color: white;
     font-weight: 600;
+    opacity: 1;
 }
 
 /*.nav.scrolla{
@@ -188,14 +216,17 @@ html::-webkit-scrollbar-thumb{
     0%{
         transform: translateX(-40px);
     }
-    35%{
-        transform: translateX(20px);
+    25%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(40px);
     }
     70%{
-        transform: translateX(-40px);
+        transform: translateX(-10px);
     }
     100%{
-        transform: translateX(0px);
+        transform: translateX(-40px);
     }
 }
 
@@ -365,7 +396,7 @@ h4{
 }
 
 .container #immagineCarat{
-    height: 30%;
+    height: 37%;
     width: 100%;
     transition: all 0.4s ease;
     position: relative; 
@@ -374,8 +405,8 @@ h4{
 }
 
 .container #immagineCarat:hover{
-    height: 35%;
-    width: 115%;
+    height: 45%;
+    width: 110%;
     text-align: center;
     position: relative; 
     left: -7%;
@@ -386,11 +417,12 @@ h4{
 
 
 .contenuti{
-    padding:5%;
-    width: 65%;
+    width: 75%;
+    padding-right: 0%;
+    padding-bottom: 20%;
+    padding-top: 3%;
     position: relative;
     float: left;
-    padding-bottom: 20%;
     word-break: keep-all;
     flex-wrap: wrap;
     word-wrap: normal; 
@@ -440,7 +472,9 @@ h2{
     font-size: 32px;
     color: transparent;
     text-align: left;
-    z-index: 1;           
+    z-index: 3;
+    letter-spacing: 1.4;
+    padding-top: 3%;       
 }
 
 /*
@@ -657,7 +691,7 @@ strong{
 
 .containerMagInfo{
     clear: left;
- margin: 8%;
+    margin: 8%;
 }
 .testoMagInfo, .imgMagInfo, .img{
     background-size: contain;
@@ -713,6 +747,8 @@ strong{
         word-wrap: break-word;
         text-justify: inter-word;
         word-break: break-all;
+        padding-top: 10% !important;
+        line-height: 2em;
     }
 
     .moreInfo::-webkit-scrollbar-thumb{
@@ -737,6 +773,13 @@ strong{
     padding: 1% 4%;
     background-color: white;
     border-radius: 5% 5% 5% 5% / 5% 5% 5% 5%;
+}
+
+
+.distrOrizzontale{
+    float: left;
+    width: 45%;
+    margin-right: 1%;
 }
 
 
@@ -870,9 +913,10 @@ strong{
     font-size: large;
     line-height: 1.8;
     font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 10%;
 }
 
 .singolo{
@@ -904,7 +948,8 @@ p{
 .sezioniUguali{
     margin-left: 2.5%;
     margin-right: 2.5%;
-    width: 50%;
+    width: 94%;
+    padding-top: 15%;
 }
 
 .testoMIPrincipale{
@@ -915,10 +960,12 @@ p{
     font-weight: 400;
     font-style: normal;
     font-size: 21px;
-            word-break: break-all;
-
+    word-break: break-all;
+    padding-top: 5%;
+    padding-bottom: 0%;
 
 }
+
 .testoMIPrincipale strong {
         color:#a398f7;
         box-sizing: border-box;
@@ -926,6 +973,7 @@ p{
         transition: opacity 200ms;
         position: relative;
         z-index: 4 !important;
+        width: 100%;
 
 }
 
@@ -946,9 +994,9 @@ p{
 
 #bigCursor2 {
   position: fixed;
-  width: 130px;
+  width: 150px;
   height: 30px;
-    background-color: yellow;
+    background-color: #fdfd96;
   pointer-events: none;
   z-index: 0 !important;
 }
@@ -1028,7 +1076,7 @@ p{
   .fioreDecorativo{
     position: relative;
     left: 0%;
-    top: -35%;
+    top: -20%;
     pointer-events: none;
   }
 
@@ -1040,7 +1088,7 @@ p{
 
     .fioreDecorativo .giglioBianco2 {
     position: absolute;
-    top: -10%;
+    top: 0%;
     right: -20%;
   }
 
@@ -1187,18 +1235,19 @@ p{
     bottom: 0;
 }
 
-/*#bg{
-height: 20%;
-padding: 5%;
-    background-size: cover !important;
-    background-position-y:center;
-    transition:background-image 2s ease-in-out;
-} */
+@keyframes compareDalBasso{
+    0%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+} 
 
 @media only screen and (max-width: 576px) {
    
 .container{
-     width: 95% !important;
+    width: 93% !important;
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
@@ -1211,35 +1260,34 @@ padding: 5%;
 
 .nav{
     width: 100%;
-    transform: translate(0);
-    justify-content: left;
     font-size: 16px;
+    height: 9vh !important;
+
 }
+.nav2 {
+    justify-content: left;
+    animation: SXaDX 8s ease 2s 3;
+    transform: translate(10px);
+}
+
+
 
 .title h3{ 
     position: relative; 
     float: left; 
-    width: 90%;
+    width: 70%;
     margin: 5%;
     margin-top: 30%;
     margin-left: 10%; 
-    color:rgb(70, 68, 64) !important;
     animation: compareDalBasso 3s ease-in;
     font-size: 38px;
+    color: white; 
 }
 
-@keyframes compareDalBasso{
-    0%{
-        transform: translateY(50px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
-} 
-
-.title {
-        width: 70%; 
+.containerMagInfo{
+    margin: 3%;
 }
+
 
 
 #cerchio {
@@ -1265,7 +1313,7 @@ h1 span {
 
 
 h2{
-    font-size: 44px;
+    font-size: 40px;
 }
 
 .anti-container h3 {
@@ -1336,12 +1384,15 @@ p{
 }
 
 .testoMIPrincipale, strong, .testoMagInfo, .testoMagInfoDestra{
-    font-size: 21px;
+    font-size: 18px;
     text-align: justify;
     width: 100%;
     margin-left: 0%;
     margin-right: 3%;
-    word-wrap: break-word;
+    word-break: normal !important;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding-top: 10%;
 
 }
 
@@ -1349,13 +1400,38 @@ p{
     float: none !important;
     width: 90% !important;
 }
+
+.testoMISecondario {
+    word-break: normal !important;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding-bottom: 10%;
+    font-size: 18px;
+}
+
+.testoMISecondario .img img{
+    float: none !important;
+    width: 90% !important;
+}
+
+.distrOrizzontale{
+    float: none;
+    width: 100%;
+    margin-right: 0%;
+}
+
+
+.img img{
+    width: 100%;
+    margin: -3%;
+    padding: -3%;
+}
 .divisione {
     display: block;
     flex-direction: column;
 }
 #spazioIntroSx {
     margin-right: 10%;
-    
     width: 100% !important;
     word-break: keep-all;
 
@@ -1363,8 +1439,21 @@ p{
 #spazioSinistra{
     width: 95%;
 }
+
 #spazioTsDx {
     width: 95%;
+    font-size: 18px !important;
+    padding-bottom: 10%;
+    margin-left: -1%;
+}
+
+#tsBreve{
+    font-size: 18px;
+    padding-top: 5%;
+}
+
+.imgDestra {
+    width: 80% !important;
 }
 
     .elSingoloGenerico{
@@ -1380,3 +1469,229 @@ p{
 
 
   }
+
+
+@media screen and (min-width: 577px) and (max-width: 992px)  {
+
+        .container{
+            width: 93% !important;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+        }
+
+        .parolaNome {
+            width: 100%;
+            margin-bottom: -20%;
+            justify-content: flex-start;
+        }
+
+        .nav{
+            width: 100%;
+            font-size: 16px;
+            height: 11vh !important;
+
+        }
+        .nav2 {
+            justify-content: left;
+            animation: SXaDX 8s ease 2s 3;
+            transform: translate(10px);
+        }
+
+
+
+        .title h3{ 
+            position: relative; 
+            float: left; 
+            width: 70%;
+            margin: 5%;
+            margin-top: 30%;
+            margin-left: 10%; 
+            animation: compareDalBasso 3s ease-in;
+            font-size: 38px;
+            color: white; 
+        }
+
+        .containerMagInfo{
+            margin: 3%;
+        }
+
+
+
+        #cerchio {
+            width: 300px;
+            height: 300px;
+        }
+
+        h1{
+            margin-top: 8%;
+            width: 15%;
+            margin-left:35%;
+            font-size: 72px;
+            flex-direction: column;
+            align-items:center !important;
+            gap: 0;
+        }
+
+        h1 span {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        h2{
+            font-size: 40px;
+        }
+
+        .anti-container h3 {
+            padding: 0%;
+            padding-bottom: 10%;
+            width: 100%;
+            text-align: center;
+            font-size: 48px;
+        }
+
+        h3{
+            font-size: 30px;
+            text-align: left;
+            padding: 10%;
+            color: #2f3732;
+        }
+
+            .fioreDecorativo{
+                top:-30%;
+            }
+
+            .fioreDecorativo img{
+                width: 30%;
+            }
+
+                .fioreDecorativo .giglioBianco {
+                left: -17%;
+            }
+
+                .fioreDecorativo .giglioBianco2 {
+                right: -20%;
+            }
+
+                .fioreDecorativo .giglioBianco3 {
+                right: -20%;
+                margin-top: -30%;
+
+            }
+
+        .categoria {
+            font-size: 22px;
+            padding-top: 20%;
+        }
+
+
+        .dettagli{
+            margin-bottom: 10%;
+                clip-path: polygon(0 0, 100% 0, 100% 50%);
+        }
+
+        .categoriaFont{
+            font-size: 22px;
+        }
+
+        .parolaChiaveTitolo {
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        p{
+            font-size: 22px;
+        }
+
+        .icona_chiusura{
+            margin-top: 15%;
+            margin-right: 5%;
+            padding: 1%;  
+        }
+
+        .testoMIPrincipale, strong, .testoMagInfo, .testoMagInfoDestra{
+            font-size: 18px;
+            text-align: justify;
+            width: 100%;
+            margin-left: 0%;
+            margin-right: 3%;
+            word-break: normal !important;
+            overflow-wrap: break-word;
+            white-space: normal;
+            padding-top: 10%;
+
+        }
+
+        .testoMIPrincipale .img img{
+            float: none !important;
+            width: 90% !important;
+        }
+
+        .testoMISecondario {
+            word-break: normal !important;
+            overflow-wrap: break-word;
+            white-space: normal;
+            padding-bottom: 10%;
+            font-size: 18px;
+        }
+
+        .testoMISecondario .img img{
+            float: none !important;
+            width: 90% !important;
+        }
+
+        .distrOrizzontale{
+            float: none;
+            width: 100%;
+            margin-right: 0%;
+        }
+
+
+        .img img{
+            width: 100%;
+            margin: -3%;
+            padding: -3%;
+        }
+        .divisione {
+            display: block;
+            flex-direction: column;
+        }
+        #spazioIntroSx {
+            margin-right: 10%;
+            width: 100% !important;
+            word-break: keep-all;
+
+        }
+        #spazioSinistra{
+            width: 95%;
+        }
+
+        #spazioTsDx {
+            width: 95%;
+            font-size: 18px !important;
+            padding-bottom: 10%;
+            margin-left: -1%;
+        }
+
+        #tsBreve{
+            font-size: 18px;
+            padding-top: 5%;
+        }
+
+        .imgDestra {
+            width: 80% !important;
+        }
+
+        .elSingoloGenerico{
+            width: 95%;
+            margin: 2.5%;
+        }
+
+        .testoMagInfo, .testoMagInfoDestra{
+            position: relative;
+            float: none;
+            width: 100%;
+        }
+
+}
