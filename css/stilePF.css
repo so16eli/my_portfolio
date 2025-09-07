@@ -1272,7 +1272,7 @@ p{
 .nav{
     width: 100%;
     font-size: 13px;
-    height: 9vh !important;
+    height: 8vh !important;
     overflow-x: auto;
 }
 .nav2 {
@@ -1280,6 +1280,7 @@ p{
     justify-content: left;
     animation: SXaDX 8s ease 2s 2;
     transform: translate(10px);
+    height: 8vh !important;
 }
 
 .nav-link {
