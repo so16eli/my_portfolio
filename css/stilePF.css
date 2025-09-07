@@ -22,9 +22,7 @@ body{
 }
 
 .spazioSXVuoto {
-    position: relative; 
-    float: left; 
-    width: 92%; 
+    width: 70%; 
     color:rgb(142, 128, 104);
     min-height: fit-content;
     text-align: center;
@@ -601,6 +599,15 @@ strong{
     -webkit-border-radius: 200px 200px 200px 200px;
     -moz-border-radius: 200px 200px 200px 200px;
     transform: rotate(0deg);
+}
+
+.icona_fissa{
+    position: fixed;
+    background-color: #f2a705;
+    bottom: 1%;
+    right: 2%;
+    padding: 4%;
+    border-radius: 200px 200px 200px 200px;;
 }
 
 .moreInfo:hover .chiusuraDiv{
@@ -1247,9 +1254,13 @@ p{
 @media only screen and (max-width: 576px) {
    
 .container{
-    width: 93% !important;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+   
+            width: 90% !important;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            border-bottom: 1px inset #a89e66;
+            margin-top: 5%;
+            margin-bottom: 20%;
 }
 
 .parolaNome {
@@ -1270,17 +1281,20 @@ p{
     transform: translate(10px);
 }
 
-
+.title {
+    width: 70%;
+    margin-top: 5%;
+}
 
 .title h3{ 
     position: relative; 
     float: left; 
-    width: 70%;
+    width: 80%;
     margin: 5%;
     margin-top: 30%;
-    margin-left: 10%; 
+    margin-left: 6%; 
     animation: compareDalBasso 3s ease-in;
-    font-size: 38px;
+    font-size: 36px;
     color: white; 
 }
 
@@ -1313,7 +1327,18 @@ h1 span {
 
 
 h2{
-    font-size: 40px;
+    font-size: 36px;
+}
+
+.contenuti {
+    min-height: fit-content;
+    width: 80%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.container #immagineCarat{
+    height: 30%;
 }
 
 .anti-container h3 {
@@ -1378,9 +1403,9 @@ p{
 }
 
 .icona_chiusura{
-    margin-top: 15%;
+    margin-top: 7%;
     margin-right: 5%;
-    padding: 1%;  
+    padding: 0%;  
 }
 
 .testoMIPrincipale, strong, .testoMagInfo, .testoMagInfoDestra{
@@ -1471,12 +1496,27 @@ p{
   }
 
 
-@media screen and (min-width: 577px) and (max-width: 992px)  {
+@media screen and (min-width: 577px) and (max-width: 1024px)  {
 
         .container{
             width: 93% !important;
             margin-left: 2.5%;
             margin-right: 2.5%;
+            border-bottom: 1px inset #a89e66;
+            margin-bottom: 20%;
+        }
+
+        .container #immagineCarat{
+            height: 50%;
+        }
+
+        .spazioSXVuoto{
+            width: 85%;
+            margin-left: 0%;
+        }
+
+        .contenuti {
+            padding-bottom: 2%;
         }
 
         .parolaNome {
@@ -1488,13 +1528,17 @@ p{
         .nav{
             width: 100%;
             font-size: 16px;
-            height: 11vh !important;
-
+            height: 11% !important;
+            overflow-y: hidden;
+            overflow-x: hidden;
         }
         .nav2 {
             justify-content: left;
             animation: SXaDX 8s ease 2s 3;
             transform: translate(10px);
+            height: 11vh !important;
+            overflow-y: hidden;
+            overflow-x: hidden;
         }
 
 
@@ -1523,9 +1567,9 @@ p{
         }
 
         h1{
-            margin-top: 8%;
+            margin-top: 35%;
             width: 15%;
-            margin-left:35%;
+            margin-left:31%;
             font-size: 72px;
             flex-direction: column;
             align-items:center !important;
@@ -1582,7 +1626,8 @@ p{
 
         .categoria {
             font-size: 22px;
-            padding-top: 20%;
+            padding-top: 15%;
+            padding-bottom: 1%;
         }
 
 
@@ -1605,9 +1650,10 @@ p{
         }
 
         .icona_chiusura{
-            margin-top: 15%;
-            margin-right: 5%;
+            margin-top: 0%;
+            margin-right: 0%;
             padding: 1%;  
+            position: relative !important;
         }
 
         .testoMIPrincipale, strong, .testoMagInfo, .testoMagInfoDestra{
@@ -1654,8 +1700,8 @@ p{
             padding: -3%;
         }
         .divisione {
-            display: block;
-            flex-direction: column;
+        display: flex;
+        flex-direction: row;
         }
         #spazioIntroSx {
             margin-right: 10%;
@@ -1694,4 +1740,44 @@ p{
             width: 100%;
         }
 
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1281px) {
+    h1{
+            margin-top: 12%;
+            width: 15%;
+            margin-left:40%;
+            font-size: 72px;
+            flex-direction: column;
+            align-items:center !important;
+            gap: 0;
+        }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .nav{
+    width: 100%;
+    font-size: 16px;
+    height: 9vh !important;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+
+    }   
+    .nav2 {
+        justify-content: left;
+        animation: SXaDX 8s ease 2s 3;
+        transform: translate(10px);
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+
+     .spazioSXVuoto{
+            width: 90%;
+            margin-left: 0%;
+        }
 }
