@@ -175,7 +175,7 @@ html::-webkit-scrollbar-thumb{
 }
 
 .nav a {
-    color: white;
+    color: #e6dade;
     text-decoration: none;
     opacity: 1;
 }
@@ -1313,10 +1313,11 @@ p{
 }
 
 h1{
-    margin-top: 60%;
+    margin-top: 50%;
     width: 80%;
     margin-left: 20%;
-    font-size: 48px;
+    font-size: 54px;
+    font-weight: 500;
     flex-direction: column;
     align-items:center !important;
     gap: 0;
@@ -1360,23 +1361,23 @@ h3{
 }
 
     .fioreDecorativo{
-        top:5%;
+        top:10%;
     }
 
     .fioreDecorativo img{
-        width: 70%;
+        width: 65%;
     }
 
         .fioreDecorativo .giglioBianco {
-        left: -15%;
+        left: -20%;
     }
 
         .fioreDecorativo .giglioBianco2 {
-        right: -15%;
+        right: -20%;
     }
 
         .fioreDecorativo .giglioBianco3 {
-        right: -15%;
+        right: -20%;
         margin-top: -160%;
 
     }
