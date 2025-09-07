@@ -1276,7 +1276,7 @@ p{
     overflow-x: auto;
 }
 .nav2 {
-    width: 60vh;
+    width: 70vh;
     justify-content: left;
     animation: SXaDX 8s ease 2s 2;
     transform: translate(10px);
