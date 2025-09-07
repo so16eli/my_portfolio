@@ -1271,12 +1271,12 @@ p{
 
 .nav{
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
     height: 9vh !important;
     overflow-x: auto;
 }
 .nav2 {
-    width: 70vh;
+    width: 80vh;
     justify-content: left;
     animation: SXaDX 8s ease 2s 2;
     transform: translate(10px);
