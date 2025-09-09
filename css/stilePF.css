@@ -760,7 +760,7 @@ strong{
         font-size: 21px;
         word-wrap: break-word;
         text-justify: inter-word;
-        word-break: break-all;
+        word-break: normal;
         padding-top: 10% !important;
         line-height: 2em;
     }
@@ -981,7 +981,6 @@ p{
             word-break: normal !important;
             overflow-wrap: break-word;
             white-space: normal;
-
     padding-top: 5%;
     padding-bottom: 0%;
 
@@ -1369,7 +1368,7 @@ h2{
 }
 
 .container #immagineCarat{
-    height: 30%;
+    height: 28%;
 }
 
 .anti-container h3 {
@@ -1450,6 +1449,12 @@ p{
     white-space: normal;
     padding-top: 10%;
 
+}
+
+ul{
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .testoMIPrincipale .img img{
