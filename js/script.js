@@ -88,7 +88,7 @@ function show() {
 
     const tempoAncora = setTimeout(attivaAncora, 1000);
     function attivaAncora() {
-    approfondimenti5.scrollIntoView({ behavior:'smooth'});
+    approfondimenti.scrollIntoView({ behavior:'smooth'});
     location.hash='#AppiCaseStudy';}
   }
 
@@ -103,12 +103,13 @@ function show() {
 
   function show2() {
     approfondimenti2.style.display = 'block';
+    approfondimenti2.style.opacity = '1 !important';
     document.querySelector("#moreInfo2").classList.remove("fadeInDown");
     document.querySelector("#moreInfo2").classList.add("fadeInTop");
 
     const tempoAncora = setTimeout(attivaAncora, 1000);
     function attivaAncora() {
-    approfondimenti5.scrollIntoView({ behavior:'smooth'});
+    approfondimenti2.scrollIntoView({ behavior:'smooth'});
     location.hash='#seoWordpress';}
   }
 
@@ -126,7 +127,7 @@ function show() {
     document.querySelector("#moreInfo3").classList.add("fadeInTop");
      const tempoAncora = setTimeout(attivaAncora, 1000);
     function attivaAncora() {
-    approfondimenti5.scrollIntoView({ behavior:'smooth'});
+    approfondimenti3.scrollIntoView({ behavior:'smooth'});
     location.hash='#ProgettazioneDb';} 
   }
 
@@ -144,7 +145,7 @@ function show() {
     document.querySelector("#moreInfo4").classList.add("fadeInTop");   
     const tempoAncora = setTimeout(attivaAncora, 1000);
     function attivaAncora() {
-    approfondimenti5.scrollIntoView({ behavior:'smooth'});
+    approfondimenti4.scrollIntoView({ behavior:'smooth'});
     location.hash='#interactionDesign';} 
   }
 
