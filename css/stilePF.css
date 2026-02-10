@@ -752,7 +752,7 @@ strong{
     }
 
     .testoMISecondario{
-        margin-top: 2%;
+        margin-top: 1%;
         margin-bottom: 1%;
         font-size: large;
         text-align: justify;
@@ -761,7 +761,7 @@ strong{
         word-wrap: break-word;
         text-justify: inter-word;
         word-break: normal;
-        padding-top: 10% !important;
+        padding-top: 5% !important;
         line-height: 2em;
     }
 
