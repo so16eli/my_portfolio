@@ -706,10 +706,14 @@ strong{
 .containerMagInfo{
     clear: left;
     margin: 8%;
+    margin-left: 12%;
+    margin-right: 12%;
+
 }
 .testoMagInfo, .imgMagInfo, .img{
     background-size: contain;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     margin-top: 2%;
     font-family: "Nunito", sans-serif;
     font-optical-sizing: auto;
@@ -921,9 +925,12 @@ strong{
 /*box che contengono info approfondimento*/
 
 .box{
-    padding: 3%;
+    padding: 10%;
+    padding-left: 15% !important;
+        padding-right: 15% !important;
+
     height: 50%;
-    width: 92%;
+    width: 70% !important;
     font-size: large;
     line-height: 1.8;
     font-family: "Nunito", sans-serif;
@@ -931,6 +938,9 @@ strong{
     font-weight: 400;
     font-style: normal;
     padding-bottom: 10%;
+}
+.box li {
+    margin-left: 6%;
 }
 
 .singolo{
